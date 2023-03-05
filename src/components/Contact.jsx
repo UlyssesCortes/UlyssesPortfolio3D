@@ -6,9 +6,7 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
-// template_mx9qiin
-// service_ez2n9g5
-// 1llWVoIhngAHZTelL
+
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -27,6 +25,7 @@ const Contact = () => {
       ...form,
       [name]: value,
     });
+
   };
 
   const handleSubmit = (e) => {
@@ -60,7 +59,6 @@ const Contact = () => {
         (error) => {
           setLoading(false);
           console.error(error);
-
           alert("Ahh, something went wrong. Please try again.");
         }
       );
