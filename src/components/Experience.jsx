@@ -57,6 +57,7 @@ const ExperienceCard = ({ experience }) => {
 };
 
 const Experience = () => {
+
   return (
     <>
       <motion.div variants={textVariant()}>
