@@ -18,12 +18,10 @@ const App = () => {
     <BrowserRouter>
 
       <div className="relative z-0 big-primary">
-
         <div className="bg-hero-pattern br-cover bg-no-repeat bg-center">
           <div id="blob"></div>
           <div id="blur"></div>
           <Navbar />
-
           <Hero />
         </div>
         <About />

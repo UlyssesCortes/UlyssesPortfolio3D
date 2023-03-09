@@ -193,8 +193,7 @@
 
 
 body {
-  background-color: black;
-  margin: 0rem;
+  background-color: #111111;
 }
 
 @keyframes rotate {
@@ -231,4 +230,9 @@ body {
   position: absolute;
   z-index: 0;
   backdrop-filter: blur(12vmax);
+}
+
+.myAbstract {
+  padding-left: 650px;
+  overflow: hidden;
 }

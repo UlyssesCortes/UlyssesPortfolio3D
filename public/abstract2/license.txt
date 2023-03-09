@@ -1,0 +1,11 @@
+Model Information:
+* title:	Abstract Geometric Sphere
+* source:	https://sketchfab.com/3d-models/abstract-geometric-sphere-8d81b384b5cc4f46a1779d0a2f5f7e27
+* author:	sc8di (https://sketchfab.com/sc8di)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Abstract Geometric Sphere" (https://sketchfab.com/3d-models/abstract-geometric-sphere-8d81b384b5cc4f46a1779d0a2f5f7e27) by sc8di (https://sketchfab.com/sc8di) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
