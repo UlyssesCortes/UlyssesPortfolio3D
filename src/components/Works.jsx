@@ -19,7 +19,7 @@ const ProjectCard = ({
 }) => {
   return (
     <>
-      <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+      <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)} className="projectContainer">
         <Tilt
           options={{
             max: 45,
@@ -32,7 +32,7 @@ const ProjectCard = ({
             <img
               src={image}
               alt='project_image'
-              className='w-full h-full object-cover rounded-2xl'
+              className='projImg'
             />
 
             <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
@@ -50,21 +50,21 @@ const ProjectCard = ({
           </div>
         </Tilt>
 
-
         <div className='descriptionContainer'>
           <h3 className=''>{name}</h3>
           <p className=''>{description}</p>
-        </div>
 
-        <div className='mt-4 flex flex-wrap gap-2'>
-          {tags.map((tag) => (
-            <p
-              key={`${name}-${tag.name}`}
-              className={`text-[14px] ${tag.color}`}
-            >
-              #{tag.name}
-            </p>
-          ))}
+
+          <div className='mt-4 flex flex-wrap gap-2'>
+            {tags.map((tag) => (
+              <p
+                key={`${name}-${tag.name}`}
+                className={`text-[14px] ${tag.color}`}
+              >
+                #{tag.name}
+              </p>
+            ))}
+          </div>
         </div>
       </motion.div>
 
@@ -92,33 +92,15 @@ const Works = () => {
       <div id="container">
         <div id="expand">
           <p className="projTitle">Projects</p>
-
         </div>
       </div>
       <motion.div variants={textVariant()}>
-        {/* <p className={`${styles.sectionSubText} `}>My work</p> */}
-        {/* <h2 className={`${styles.sectionHeadText} projTitle `}>Projects.</h2> */}
-        {/* <p className="projTitle">Projects</p> */}
+        <div className='myProjects'>
+          {projects.map((project, index) => (
+            <ProjectCard key={`project-${index}`} index={index} {...project} />
+          ))}
+        </div>
       </motion.div>
-
-      {/* <div className='w-full flex'>
-        <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
-          className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
-        >
-          Following projects showcases my skills and experience through
-          real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos in it. It reflects my
-          ability to solve complex problems, work with different technologies,
-          and manage projects effectively.
-        </motion.p>
-      </div> */}
-
-      <div className='myProjects'>
-        {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
-        ))}
-      </div>
     </>
   )
 }
