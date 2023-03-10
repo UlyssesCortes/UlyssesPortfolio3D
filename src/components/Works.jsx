@@ -22,9 +22,9 @@ const ProjectCard = ({
       <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)} className="projectContainer">
         <Tilt
           options={{
-            max: 45,
-            scale: 1,
-            speed: 450,
+            max: 35,
+            scale: 1.3,
+            speed: 5,
           }}
           className='projImg'
         >
@@ -51,17 +51,16 @@ const ProjectCard = ({
         </Tilt>
 
         <div className='descriptionContainer'>
-          <h3 className=''>{name}</h3>
-          <p className=''>{description}</p>
-
+          <h3>{name}</h3>
+          <p>{description}</p>
 
           <div className='mt-4 flex flex-wrap gap-2'>
             {tags.map((tag) => (
               <p
                 key={`${name}-${tag.name}`}
-                className={`text-[14px] ${tag.color}`}
+                className="tags"
               >
-                #{tag.name}
+                {tag.name}
               </p>
             ))}
           </div>

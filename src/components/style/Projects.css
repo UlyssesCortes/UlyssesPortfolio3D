@@ -7,8 +7,8 @@
 }
 
 #expand {
-    background-color: rgb(255, 255, 255);
-    min-height: 1500px;
+    background-color: #f3f7fb;
+    min-height: 1850px;
     min-width: 100%;
     position: absolute;
     will-change: width;
@@ -29,26 +29,52 @@
 .myProjects {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 180px;
     margin: 250px 0 250px 0;
+    flex-wrap: wrap;
 }
 
 .projImg {
-    max-width: 400px;
-    max-height: 400px;
-    border-radius: 5px;
+    min-width: 550px;
+    min-height: 350px;
+    border-radius: 10px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .descriptionContainer {
-    max-width: 500px;
-    max-height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px;
+    min-width: 450px;
+    min-height: 350px;
     color: black;
+    font-size: 18px;
+}
+
+.descriptionContainer h3 {
+    font-size: 30px;
 }
 
 .projectContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 50px 0 30px;
+    gap: 100px;
+    padding: 0 50px 0 50px;
+}
+
+.projectContainer:nth-child(even) {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.tags {
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: 14px;
+    padding: 8px;
 }
