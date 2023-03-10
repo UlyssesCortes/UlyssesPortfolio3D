@@ -9,7 +9,7 @@
 #expand {
     background-color: #f3f7fb;
     min-height: 1850px;
-    min-width: 100%;
+    min-width: 105%;
     position: absolute;
     will-change: width;
     border-radius: 50px;

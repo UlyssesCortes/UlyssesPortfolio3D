@@ -22,8 +22,8 @@ const ProjectCard = ({
       <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)} className="projectContainer">
         <Tilt
           options={{
-            max: 35,
-            scale: 1.3,
+            max: 30,
+            scale: 1.2,
             speed: 5,
           }}
           className='projImg'
@@ -79,7 +79,7 @@ const Works = () => {
   function expanding() {
     const scrollTop = window.pageYOffset;
     const scrollAndSpeed = (scrollTop / speed)
-    expandDiv.style.width = Math.min(Math.max(scrollAndSpeed, 20), 130) + "%";
+    expandDiv.style.width = Math.min(Math.max(scrollAndSpeed, 20), 120) + "%";
   }
 
   window.addEventListener('scroll', function () {
