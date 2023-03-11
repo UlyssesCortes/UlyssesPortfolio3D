@@ -8,7 +8,6 @@ import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import './style/Projects.css'
 
-
 const ProjectCard = ({
   index,
   name,
@@ -66,7 +65,6 @@ const ProjectCard = ({
           </div>
         </div>
       </motion.div>
-
     </>
   );
 };
