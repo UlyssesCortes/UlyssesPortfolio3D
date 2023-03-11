@@ -22,6 +22,7 @@ const App = () => {
           <div className="container">
             <div id="blob"></div>
             <div id="blur"></div>
+
           </div>
           <Navbar />
           <Hero />

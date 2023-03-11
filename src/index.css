@@ -285,3 +285,36 @@ body {
   background-color: rgba(46, 45, 45, 0.918);
   backdrop-filter: blur(31px);
 }
+
+.arroyBtn {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  border: 2px solid white;
+  /* margin-top: -250px; */
+  /* margin-left: -400px; */
+  border-radius: 50%;
+  padding: 148px;
+  cursor: pointer;
+  /* z-index: 999; */
+  transition: all ease-in .5s;
+}
+
+.arrowImg {
+  object-fit: contain;
+  min-width: 50px;
+  min-height: 50px;
+  /* max-width: 50px;
+  max-height: 50px; */
+}
+
+.arroyBtn:hover {
+  scale: .5;
+  background-color: #804dee;
+}

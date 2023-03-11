@@ -29,6 +29,7 @@ import tesla from "./company/tesla.png";
 import carrent from "./GraceShoper.png";
 import jobit from "./FitnessTracker.png";
 import tripguide from "./WindowPros.png";
+import arrow from '../assets/arrow.png'
 
 export {
   logo,
@@ -58,5 +59,6 @@ export {
   tesla,
   carrent,
   jobit,
+  arrow,
   tripguide,
 };

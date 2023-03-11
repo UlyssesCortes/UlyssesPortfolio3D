@@ -21,8 +21,8 @@ const ProjectCard = ({
       <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)} className="projectContainer">
         <Tilt
           options={{
-            max: 30,
-            scale: 1.2,
+            max: 20,
+            scale: 1,
             speed: 5,
           }}
           className='projImg'
@@ -84,20 +84,25 @@ const Works = () => {
     this.requestAnimationFrame(expanding);
   }, false)
 
+
   return (
     <>
       <div id="container">
         <div id="expand">
           <p className="projTitle">Projects</p>
+
         </div>
       </div>
+
       <motion.div variants={textVariant()}>
+
         <div className='myProjects'>
           {projects.map((project, index) => (
             <ProjectCard key={`project-${index}`} index={index} {...project} />
           ))}
         </div>
       </motion.div>
+
     </>
   )
 }

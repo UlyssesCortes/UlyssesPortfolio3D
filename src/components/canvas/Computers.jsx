@@ -1,7 +1,6 @@
 import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
-import textureImage from "/root/3D Portfolio/public/abstract/textures/Material_0_baseColor.png";
 
 import CanvasLoader from "../Loader";
 
