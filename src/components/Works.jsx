@@ -77,7 +77,7 @@ const Works = () => {
   function expanding() {
     const scrollTop = window.pageYOffset;
     const scrollAndSpeed = (scrollTop / speed)
-    expandDiv.style.width = Math.min(Math.max(scrollAndSpeed, 20), 120) + "%";
+    expandDiv.style.width = Math.min(Math.max(scrollAndSpeed, 20), 130) + "%";
   }
 
   window.addEventListener('scroll', function () {

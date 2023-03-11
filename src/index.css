@@ -247,8 +247,6 @@ body {
   overflow: hidden;
 }
 
-
-
 .workBtn {
   width: 200px;
   padding: 15px;
@@ -281,4 +279,9 @@ body {
 .buttonContainer {
   display: flex;
   align-items: center;
+}
+
+.aboutCard {
+  background-color: rgba(46, 45, 45, 0.918);
+  backdrop-filter: blur(31px);
 }
