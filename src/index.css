@@ -222,7 +222,7 @@ body {
 
 #blob {
   background-color: white;
-  height: 38vmax;
+  height: 34vmax;
   aspect-ratio: 1.5;
   position: absolute;
   left: 50%;
@@ -246,6 +246,8 @@ body {
   padding-left: 650px;
   overflow: hidden;
 }
+
+
 
 .workBtn {
   width: 200px;
