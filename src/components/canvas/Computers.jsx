@@ -5,7 +5,7 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile }) => {
-  const computer = useGLTF("./abstract2/scene.gltf");
+  const computer = useGLTF("./abstract3/purple.gltf");
   const [positionY, setPositionY] = useState(0);
 
   useEffect(() => {
@@ -23,7 +23,7 @@ const Computers = ({ isMobile }) => {
         position={[-30, 90, -10]}
         angle={1}
         penumbra={1}
-        intensity={1.8}
+        intensity={1}
         castShadow
         shadow-mapSize={1024}
       />

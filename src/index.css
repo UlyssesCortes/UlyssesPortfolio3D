@@ -302,7 +302,7 @@ body {
   border-radius: 50%;
   padding: 11%;
   cursor: pointer;
-  transition: all ease-in .3s;
+  transition: all ease-in 0.5s;
   opacity: 0.6;
 }
 

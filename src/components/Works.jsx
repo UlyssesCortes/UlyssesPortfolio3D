@@ -72,7 +72,7 @@ const ProjectCard = ({
 const Works = () => {
 
   const expandDiv = document.getElementById("expand")
-  const speed = 5;
+  const speed = 2;
 
   function expanding() {
     const scrollTop = window.pageYOffset;

@@ -79,9 +79,9 @@
     padding: 8px;
 }
 
-/* 
-#expand:hover>#trailer {
-    opacity: 1;
+/* .projImg:hover #trailer {
+    height: 200px;
+    width: 200px;
 } */
 
 #trailer {
