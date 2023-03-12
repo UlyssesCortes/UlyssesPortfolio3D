@@ -199,7 +199,7 @@ body {
 
 
 body {
-  background-color: #111111;
+  background-color: #1d1d1f;
 }
 
 @keyframes rotate {
@@ -229,7 +229,7 @@ body {
   top: 50%;
   translate: -50% -50%;
   border-radius: 50%;
-  background: linear-gradient(to right, aquamarine, mediumpurple);
+  background: linear-gradient(to right, #8568a8, #bdb882);
   animation: rotate 20s infinite;
   opacity: 0.8;
 }
@@ -293,28 +293,34 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100px;
-  height: 100px;
+  width: 12%;
+  height: 12%;
   background-color: transparent;
-  border: 2px solid white;
-  margin-bottom: -100px;
+  border: 2px solid #804dee;
+  margin-bottom: -70px;
   margin-left: -40px;
   border-radius: 50%;
-  padding: 148px;
+  padding: 11%;
   cursor: pointer;
-  /* z-index: 999; */
-  transition: all ease-in .5s;
+  transition: all ease-in .3s;
+  opacity: 0.6;
 }
 
 .arrowImg {
   object-fit: contain;
   min-width: 50px;
   min-height: 50px;
-  /* max-width: 50px;
-  max-height: 50px; */
+  transition: all ease-in .3s;
+
 }
 
 .arroyBtn:hover {
-  scale: .5;
-  background-color: #804dee;
+  scale: .4;
+  opacity: 1;
+  background-color: #804dee8f;
+}
+
+.arroyBtn:hover>.arrowImg {
+  min-width: 90px;
+  min-height: 90px;
 }

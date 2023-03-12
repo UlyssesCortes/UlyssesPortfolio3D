@@ -14,6 +14,8 @@ const App = () => {
     }, { duration: 3000, fill: "forwards" });
   }
 
+
+
   return (
     <BrowserRouter>
 

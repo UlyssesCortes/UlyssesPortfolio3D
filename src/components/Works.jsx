@@ -18,7 +18,7 @@ const ProjectCard = ({
 }) => {
   return (
     <>
-      <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)} className="projectContainer">
+      <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)} className="projectContainer" data-type="link">
         <Tilt
           options={{
             max: 20,
@@ -84,13 +84,72 @@ const Works = () => {
     this.requestAnimationFrame(expanding);
   }, false)
 
+  const expand = document.getElementById("expand");
+  const myProjects = document.querySelector('.myProjects');
+  const trailer = document.getElementById("trailer");
+
+  const animateTrailer = (e, interacting) => {
+    const x = e.clientX - trailer.offsetWidth / 2,
+      y = e.clientY - trailer.offsetHeight / 2;
+
+    const keyframes = {
+      transform: `translate(${x}px, ${y}px) scale(${interacting ? 8 : 1})`
+    };
+
+    if (trailer) {
+      trailer.animate(keyframes, {
+        duration: 800,
+        fill: "forwards"
+      });
+    }
+  };
+
+  const getTrailerClass = (type) => {
+    switch (type) {
+      case "video":
+        return "fa-solid fa-play";
+      default:
+        return "fa-solid fa-arrow-up-right";
+    }
+  };
+
+  const handleExpandMouseover = (e) => {
+    if (trailer) {
+      trailer.style.opacity = 1;
+      trailer.dataset.type = e.target.dataset.type;
+      const icon = document.getElementById("trailer-icon");
+      icon.className = getTrailerClass(e.target.dataset.type);
+    }
+  };
+
+  const handleExpandMouseout = () => {
+    if (trailer) {
+      trailer.style.opacity = 0;
+    }
+  };
+
+  if (expand) {
+    expand.addEventListener("mouseover", handleExpandMouseover);
+    expand.addEventListener("mouseout", handleExpandMouseout);
+  }
+
+  if (myProjects) {
+    myProjects.addEventListener("mouseover", handleExpandMouseover);
+    myProjects.addEventListener("mouseout", handleExpandMouseout);
+  }
+
+  if (trailer) {
+    window.addEventListener("mousemove", (e) => {
+      const interacting = e.target.closest("#expand, .myProjects") !== null;
+      animateTrailer(e, interacting);
+    });
+  }
 
   return (
     <>
       <div id="container">
         <div id="expand">
           <p className="projTitle">Projects</p>
-
         </div>
       </div>
 
@@ -102,7 +161,8 @@ const Works = () => {
           ))}
         </div>
       </motion.div>
-
+      <div id="trailer">
+      </div>
     </>
   )
 }
