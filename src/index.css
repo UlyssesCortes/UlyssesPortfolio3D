@@ -229,9 +229,10 @@ body {
   top: 50%;
   translate: -50% -50%;
   border-radius: 50%;
-  background: linear-gradient(to right, #8568a8, #bdb882);
+  /* background: linear-gradient(to right, #8568a8, #bdb882); */
+  background: linear-gradient(to right, aquamarine, mediumpurple);
   animation: rotate 20s infinite;
-  opacity: 0.8;
+  opacity: 0.5;
 }
 
 #blur {
@@ -323,4 +324,57 @@ body {
 .arroyBtn:hover>.arrowImg {
   min-width: 90px;
   min-height: 90px;
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .arroyBtn {
+    display: none;
+  }
+
+  .heroSection {
+    margin-top: 100px;
+    padding: 50px;
+  }
+
+  .rightHeader {
+    width: 100%;
+    margin-top: -200px;
+  }
+
+  #container {
+    margin-top: 340px;
+  }
+
+  #expand {
+    min-height: 3050px;
+  }
+
+  .projectContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-left: -45px;
+  }
+
+  .projectContainer:nth-child(even) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .projImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+    min-height: 250px;
+    scale: .9;
+  }
+
+  .descriptionContainer {
+    padding: 50px;
+  }
 }

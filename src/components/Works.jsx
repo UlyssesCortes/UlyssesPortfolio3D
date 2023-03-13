@@ -25,7 +25,7 @@ const ProjectCard = ({
             scale: 1,
             speed: 5,
           }}
-          className='projImg'
+        // className='projImg'
         >
           <div className='relative w-full h-[230px]'>
             <img
@@ -161,8 +161,8 @@ const Works = () => {
           ))}
         </div>
       </motion.div>
-      <div id="trailer">
-      </div>
+      {/* <div id="trailer">
+      </div> */}
     </>
   )
 }

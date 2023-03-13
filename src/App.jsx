@@ -14,8 +14,6 @@ const App = () => {
     }, { duration: 3000, fill: "forwards" });
   }
 
-
-
   return (
     <BrowserRouter>
 
@@ -24,18 +22,14 @@ const App = () => {
           <div className="container">
             <div id="blob"></div>
             <div id="blur"></div>
-
           </div>
           <Navbar />
           <Hero />
         </div>
         <Works />
-
         <About />
-
         <Experience />
-
-        <Tech />
+        {/* <Tech /> */}
         {/* <Feedbacks /> */}
         <div className="relative z-0">
           <Contact />
