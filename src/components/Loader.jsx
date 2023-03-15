@@ -12,7 +12,6 @@ const Loader = () => {
           width: 80,
           height: 80,
           background: 'red',
-
           borderRadius: '50%',
           boxShadow: '0px 2px 10px rgba(0, 0, 0, 0.2)',
           background: 'linear-gradient(135deg, #0077ff, #00aaff)',

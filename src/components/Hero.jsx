@@ -1,8 +1,6 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
 import { arrow } from "../assets";
-import { github } from "../assets";
 import './style/Hero.css'
 
 const Hero = () => {
