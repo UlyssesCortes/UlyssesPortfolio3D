@@ -4,7 +4,6 @@ import { About, Contact, Experience, Hero, Navbar, Works, StarsCanvas } from './
 const App = () => {
 
   const blob = document.getElementById("blob");
-
   window.onpointermove = event => {
     const { clientX, clientY } = event;
 
@@ -27,22 +26,20 @@ const App = () => {
   return (
     <BrowserRouter>
       <div id="scroll-progress"></div>
-      <div className="mainContainer">
-        <div className="bg-hero-pattern br-cover bg-no-repeat bg-center">
-          <div className="container">
-            <div id="blob"></div>
-            <div id="blur"></div>
-          </div>
-          <Navbar />
-          <Hero />
+      <div className="bg-hero-pattern br-cover bg-no-repeat bg-center">
+        <div className="container">
+          <div id="blob"></div>
+          <div id="blur"></div>
         </div>
-        <Works />
-        <About />
-        <Experience />
-        <div className="relative z-0">
-          <Contact />
-          <StarsCanvas />
-        </div>
+        <Navbar />
+        <Hero />
+      </div>
+      <Works />
+      <About />
+      <Experience />
+      <div className="relative z-0">
+        <Contact />
+        <StarsCanvas />
       </div>
     </BrowserRouter >
   )
