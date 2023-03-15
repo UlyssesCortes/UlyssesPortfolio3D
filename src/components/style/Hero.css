@@ -13,13 +13,11 @@
     display: flex;
     flex-direction: column;
     margin: auto;
-    /* outline: auto; */
     min-width: 35%;
     height: 60vh;
 }
 
 .rightHeader {
-    /* outline: auto; */
     min-width: 35%;
     height: 60vh;
     margin: auto;

@@ -229,7 +229,6 @@ body {
   top: 50%;
   translate: -50% -50%;
   border-radius: 50%;
-  /* background: linear-gradient(to right, #8568a8, #bdb882); */
   background: linear-gradient(to right, aquamarine, mediumpurple);
   animation: rotate 20s infinite;
   opacity: 0.5;
@@ -327,9 +326,6 @@ body {
 }
 
 @media only screen and (max-width: 800px) {
-  body {
-    overflow: hidden;
-  }
 
   .arroyBtn {
     display: none;
@@ -379,20 +375,40 @@ body {
   }
 
   #blob {
-    height: 20vmax;
-    display: none;
+    height: 60vmax;
+    overflow-x: hidden;
+    translate: -90%;
+    max-width: 100%;
   }
 
   .js {
     width: 100px;
     height: 100px;
     font-size: 22px;
-    margin-left: 80px;
-    margin-top: -120px;
+    margin-left: 100px;
+    margin-top: -80px;
   }
 
   .threejs {
     margin-left: 0px;
-    margin-top: 500px;
+    margin-top: 450px;
+  }
+
+  .postgres {
+    width: 150px;
+    height: 150px;
+    font-size: 28px;
+    margin-left: 140px;
+    margin-top: 350px;
+  }
+
+  .react {
+    margin-left: -20px;
+    margin-top: 30px;
+  }
+
+  .html {
+    margin-left: -40px;
+    margin-top: 320px;
   }
 }
