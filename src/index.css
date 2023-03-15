@@ -378,4 +378,21 @@ body {
     padding: 50px;
   }
 
+  #blob {
+    height: 20vmax;
+    display: none;
+  }
+
+  .js {
+    width: 100px;
+    height: 100px;
+    font-size: 22px;
+    margin-left: 80px;
+    margin-top: -120px;
+  }
+
+  .threejs {
+    margin-left: 0px;
+    margin-top: 500px;
+  }
 }
