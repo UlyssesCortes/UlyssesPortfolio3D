@@ -15,7 +15,6 @@ const Hero = () => {
     elem.addEventListener('mousemove', onMouseMove);
     elem.addEventListener('mouseleave', onMouseLeave);
 
-    // Load the saved position from localStorage, if available
     const savedPosition = localStorage.getItem(`position-${elem.className}`);
     if (savedPosition) {
       elem.style.transform = `translate(${savedPosition})`;
@@ -50,15 +49,11 @@ const Hero = () => {
       const position = `${translateX}px, ${translateY}px`;
       localStorage.setItem(`position-${event.target.className}`, position);
     }
-    // Otherwise, reset the element's position
     else {
       event.target.style.transform = '';
     }
   }
-
-  // Handler for when the mouse leaves the element
   function onMouseLeave(event) {
-    // Reset the element's position
     event.target.style.transform = '';
   }
   return (
@@ -83,8 +78,6 @@ const Hero = () => {
             <button className="workBtn">Resume</button>
           </div>
         </div>
-        {/* <ComputersCanvas /> */}
-        {/* <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'> */}
         <a href='#container'>
           <div className='arroyBtn'>
             <img
@@ -94,7 +87,6 @@ const Hero = () => {
             />
           </div>
         </a>
-        {/* </div> */}
         <section className="rightHeader">
           <div className="js techIcon">JS</div>
           <div className="css techIcon">CSS</div>

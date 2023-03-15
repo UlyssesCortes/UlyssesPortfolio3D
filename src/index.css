@@ -15,8 +15,8 @@
 }
 
 body {
+  max-width: 100%;
   overflow-x: hidden;
-
 }
 
 .hash-span {
@@ -328,7 +328,7 @@ body {
 
 @media only screen and (max-width: 800px) {
   body {
-    overflow-x: hidden;
+    overflow: hidden;
   }
 
   .arroyBtn {
@@ -377,4 +377,5 @@ body {
   .descriptionContainer {
     padding: 50px;
   }
+
 }
