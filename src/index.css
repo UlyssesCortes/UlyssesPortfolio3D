@@ -15,7 +15,6 @@
 }
 
 body {
-  max-width: 100%;
   overflow-x: hidden;
 }
 
@@ -236,7 +235,7 @@ body {
 
 #blur {
   height: 1000%;
-  width: 100%;
+  width: 105%;
   position: absolute;
   z-index: 0;
   backdrop-filter: blur(12vmax);
@@ -324,6 +323,21 @@ body {
   min-width: 90px;
   min-height: 90px;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  width: 0%;
+  height: 4px;
+  background: #7983ff;
+  z-index: 10000;
+  border-radius: 50px;
+}
+
 
 @media only screen and (max-width: 800px) {
 

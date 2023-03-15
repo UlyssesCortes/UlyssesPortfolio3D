@@ -14,9 +14,19 @@ const App = () => {
     }, { duration: 3000, fill: "forwards" });
   }
 
+  const scrollProgress = document.getElementById('scroll-progress');
+  const height =
+    document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+  window.addEventListener('scroll', () => {
+    const scrollTop =
+      document.body.scrollTop || document.documentElement.scrollTop;
+    scrollProgress.style.width = `${(scrollTop / height) * 100}%`;
+  });
+
   return (
     <BrowserRouter>
-
+      <div id="scroll-progress"></div>
       <div className="mainContainer">
         <div className="bg-hero-pattern br-cover bg-no-repeat bg-center">
           <div className="container">
