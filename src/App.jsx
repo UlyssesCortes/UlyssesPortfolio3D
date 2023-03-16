@@ -4,10 +4,13 @@ import { About, Contact, Experience, Hero, Navbar, Works, StarsCanvas } from './
 const App = () => {
 
   const blob = document.getElementById("blob");
-  window.addEventListener("mousemove", (event) => {
+  window.addEventListener("mousemove", event => {
     const { clientX, clientY } = event;
-    blob.style.left = `${clientX}px`;
-    blob.style.top = `${clientY}px`;
+
+    blob.animate({
+      left: `${clientX}px`,
+      top: `${clientY}px`
+    }, { duration: 3000, fill: "forwards" });
   });
 
   const scrollProgress = document.getElementById('scroll-progress');
@@ -32,7 +35,6 @@ const App = () => {
         <Hero />
       </div>
       <Works />
-      <About />
       <Experience />
       <div className="relative z-0">
         <Contact />

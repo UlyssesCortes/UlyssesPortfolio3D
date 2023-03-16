@@ -3,14 +3,11 @@ import {
     backend,
     creator,
     web,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
-
+    windowPros,
+    frazierFarms,
+    graceShoper,
+    fitness,
+    windowProsIcon,
 } from "../assets";
 
 export const navLinks = [
@@ -48,55 +45,39 @@ const services = [
 ];
 const experiences = [
     {
-        title: "Web Freelancer",
+        title: "Freelance Web Developer",
         company_name: "WindowPros",
-        icon: starbucks,
-        iconBg: "#383E56",
-        date: "In progress",
+        icon: windowPros,
+        iconBg: "#E6DEDD",
+        date: "Mar 2023 – Current",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Develop a user-friendly website that allowed customers to easily request a quote for the business's services. ",
+            "Leverage skills used in React, CSS and HTML to create a responsive website with an intuitive interface.",
+            "Collaborate closely with the business owners throughout the development process to ensure that the website met their needs and reflected their brand values.",
         ],
     },
     {
-        title: "Window Cleaner",
+        title: "Associate",
         company_name: "WindowPros",
-        icon: tesla,
+        icon: windowPros,
         iconBg: "#E6DEDD",
         date: "Feb 2022 - Aug 2022",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Enhanced strong customer service skills by providing efficient service in a fast-paced environment.",
+            "Contributed to a team that constantly communicated to achieve company goals.",
+            "Recognized the value of teamwork and contributed to building a team that consistently worked together to achieve success.",
         ],
     },
     {
-        title: "Customer service",
+        title: "Produce Specialist",
         company_name: "Frazer Farms",
-        icon: shopify,
-        iconBg: "#383E56",
-        date: "Jan 2020 - Jan 2021",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
+        icon: frazierFarms,
         iconBg: "#E6DEDD",
-        date: "Jan 2023 - Present",
+        date: "Jan 2020 - Jan 2021  ",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Ensuring proper product presentation through arranging, creating displays, and stocking products.",
+            "Providing customer service by helping customers find products, answering inquiries, and providing recommendations.",
+            "Maintaining store cleanliness by keeping shelves tidy, labeling products, and addressing spills or messes while answering calls and addressing customer inquiries professionally.",
         ],
     },
 ];
@@ -123,8 +104,8 @@ const projects = [
                 name: "CSS"
             },
         ],
-        image: carrent,
-        source_code_link: "https://github.com/",
+        image: graceShoper,
+        source_code_link: "https://github.com/The-Three-Codemigos/grace_shopper",
     },
     {
         name: "Fitness Tracker",
@@ -147,8 +128,8 @@ const projects = [
                 name: "CSS"
             },
         ],
-        image: jobit,
-        source_code_link: "https://github.com/",
+        image: fitness,
+        source_code_link: "https://github.com/UlyssesCortes/UNIV_Fitness-tracker_FrontEnd",
     },
     {
         name: "Window Pros",
@@ -165,8 +146,8 @@ const projects = [
                 name: "CSS"
             },
         ],
-        image: tripguide,
-        source_code_link: "https://github.com/",
+        image: windowProsIcon,
+        source_code_link: "https://github.com/UlyssesCortes/WindowPro",
     },
 ];
 

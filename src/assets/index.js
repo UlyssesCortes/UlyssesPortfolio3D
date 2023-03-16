@@ -6,14 +6,12 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import frazierFarms from "./company/FrazierFarm.png";
+import windowPros from "./company/squeegee.png";
 
-import carrent from "./GraceShoper.png";
-import jobit from "./FitnessTracker.png";
-import tripguide from "./WindowPros.png";
+import graceShoper from "./GraceShoper.png";
+import fitness from "./FitnessTracker.png";
+import windowProsIcon from "./WindowPros.png";
 import arrow from '../assets/arrow.png'
 
 export {
@@ -24,12 +22,10 @@ export {
   github,
   menu,
   close,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
+  frazierFarms,
+  windowPros,
+  graceShoper,
+  fitness,
   arrow,
-  tripguide,
+  windowProsIcon,
 };
