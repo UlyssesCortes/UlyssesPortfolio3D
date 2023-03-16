@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { arrow } from "../assets";
+import { arrow, js, react, postgres } from "../assets";
 import './style/Hero.css'
 
 const Hero = () => {
@@ -23,8 +23,10 @@ const Hero = () => {
 
           </div>
           <div className='buttonContainer'>
-            <button className="workBtn">My Projects</button>
-            <button className="workBtn">Resume</button>
+            <a href='#container'>
+              <button className="workBtn">My Projects</button>
+            </a>
+            <button className="workBtn" >Resume</button>
           </div>
         </div>
         <a href='#container'>
@@ -37,14 +39,32 @@ const Hero = () => {
           </div>
         </a>
         <section className="rightHeader">
-          <div className="js techIcon">JS</div>
+          <div className="js techIcon">
+            <img
+              src={js}
+              alt='js'
+              className='arrowImg techIconBig'
+            />
+          </div>
           <div className="css techIcon">CSS</div>
           <div className="html techIcon">HTML</div>
-          <div className="react techIcon">React</div>
+          <div className="react techIcon">
+            <img
+              src={react}
+              alt='react'
+              className='arrowImg techIconBig'
+            />
+          </div>
           <div className="nodejs techIcon">NodeJs</div>
           <div className="threejs techIcon">ThreeJs</div>
           <div className="express techIcon">Express</div>
-          <div className="postgres techIcon">Postgres</div>
+          <div className="postgres techIcon">
+            <img
+              src={postgres}
+              alt='postgres'
+              className='arrowImg techIconBig'
+            />
+          </div>
         </section>
       </section>
 

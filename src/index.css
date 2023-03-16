@@ -234,7 +234,7 @@ body {
 }
 
 #blur {
-  height: 1000%;
+  height: 200%;
   width: 105%;
   position: absolute;
   z-index: 0;
@@ -381,7 +381,7 @@ body {
     align-items: center;
     min-width: 300px;
     min-height: 250px;
-    scale: .9;
+    scale: .85;
   }
 
   .descriptionContainer {

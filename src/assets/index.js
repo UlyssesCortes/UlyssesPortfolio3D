@@ -14,6 +14,10 @@ import fitness from "./FitnessTracker.png";
 import windowProsIcon from "./WindowPros.png";
 import arrow from '../assets/arrow.png'
 
+import js from '../assets/js.png'
+import postgres from '../assets/postgres.png'
+import react from '../assets/atom.png'
+
 export {
   backend,
   creator,
@@ -28,4 +32,7 @@ export {
   fitness,
   arrow,
   windowProsIcon,
+  js,
+  postgres,
+  react,
 };
