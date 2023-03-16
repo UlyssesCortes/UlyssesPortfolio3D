@@ -4,14 +4,11 @@ import { About, Contact, Experience, Hero, Navbar, Works, StarsCanvas } from './
 const App = () => {
 
   const blob = document.getElementById("blob");
-  window.onpointermove = event => {
+  window.addEventListener("mousemove", (event) => {
     const { clientX, clientY } = event;
-
-    blob.animate({
-      left: `${clientX}px`,
-      top: `${clientY}px`
-    }, { duration: 3000, fill: "forwards" });
-  }
+    blob.style.left = `${clientX}px`;
+    blob.style.top = `${clientY}px`;
+  });
 
   const scrollProgress = document.getElementById('scroll-progress');
   const height =
