@@ -29,7 +29,7 @@ const Hero = () => {
             <a href='#container'>
               <button className="workBtn">My Projects</button>
             </a>
-            <a href="https://drive.google.com/file/d/19skPWiFF3BpRYw__D4unwIlbtHrpBdBB/view?usp=sharing" target="_blank">
+            <a href="https://drive.google.com/file/d/1rZdzNDJpHE-y9ccKSb94CeH7Ssay0V-t/view?usp=sharing" target="_blank">
               <button className="workBtn" >Resume</button>
             </a>
           </div>
