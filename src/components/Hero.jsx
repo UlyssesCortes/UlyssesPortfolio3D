@@ -26,9 +26,7 @@ const Hero = () => {
             <a href='#container'>
               <button className="workBtn">My Projects</button>
             </a>
-            <a href="file:///C:/Users/Ulysses/Desktop/UlyssesResume.pdf" download>
-              <button className="workBtn" >Resume</button>
-            </a>
+            <button className="workBtn" >Resume</button>
           </div>
         </div>
         <a href='#container'>
