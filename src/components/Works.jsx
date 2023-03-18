@@ -21,11 +21,10 @@ const ProjectCard = ({
       <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)} className="projectContainer" data-type="link">
         <Tilt
           options={{
-            max: 20,
+            max: 10,
             scale: 1,
             speed: 5,
           }}
-        // className='projImg'
         >
           <div className='relative w-full h-[230px]'>
             <img
@@ -89,7 +88,7 @@ const Works = () => {
     <>
       <div id="container">
         <div id="expand">
-          <p className="projTitle">Projects</p>
+          <p id="projTitle" className={styles.sectionHeadText}>Projects</p>
         </div>
       </div>
 

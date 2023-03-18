@@ -3,6 +3,8 @@ import { styles } from "../styles";
 import { arrow, js, react, postgres } from "../assets";
 import './style/Hero.css'
 
+
+
 const Hero = () => {
 
   return (
@@ -26,7 +28,9 @@ const Hero = () => {
             <a href='#container'>
               <button className="workBtn">My Projects</button>
             </a>
-            <button className="workBtn" >Resume</button>
+            <a href="https://drive.google.com/file/d/19skPWiFF3BpRYw__D4unwIlbtHrpBdBB/view?usp=sharing" target="_blank">
+              <button className="workBtn" >Resume</button>
+            </a>
           </div>
         </div>
         <a href='#container'>
