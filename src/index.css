@@ -340,7 +340,7 @@ body {
 
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 120px) {
 
   .arroyBtn {
     display: none;
@@ -348,10 +348,20 @@ body {
 
   .heroSection {
     margin-top: 100px;
-    padding: 50px;
   }
 
+  .heroName {
+    padding: 25px;
+  }
+
+  .workBtn {
+    scale: .95;
+  }
+
+
   .rightHeader {
+    display: flex;
+    justify-content: center;
     width: 100%;
     margin-top: -200px;
   }
@@ -405,8 +415,22 @@ body {
   }
 
   .threejs {
-    margin-left: 0px;
+    margin-left: -150px;
     margin-top: 450px;
+  }
+
+  .nodejs {
+    margin-top: 50px;
+  }
+
+  .css {
+    margin-left: -10px;
+  }
+
+  .express {
+    margin-left: 300px;
+    margin-top: 230px;
+
   }
 
   .postgres {
@@ -418,12 +442,12 @@ body {
   }
 
   .react {
-    margin-left: -20px;
+    margin-left: -200px;
     margin-top: 30px;
   }
 
   .html {
-    margin-left: -40px;
+    margin-left: -200px;
     margin-top: 320px;
   }
 }
