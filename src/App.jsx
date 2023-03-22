@@ -4,10 +4,10 @@ import { About, Contact, Experience, Hero, Navbar, Works, StarsCanvas } from './
 
 const App = () => {
 
+  // const blob = document.getElementById("blob")
+
   function handleMouseMove(event) {
     const { clientX, clientY } = event;
-    // console.log(clientX)
-    // console.log(clientY)
 
     blob.animate({
       left: `${clientX}px`,
@@ -24,7 +24,6 @@ const App = () => {
   }, []);
 
   const scrollProgress = document.getElementById('scroll-progress');
-
 
 
   const height =
