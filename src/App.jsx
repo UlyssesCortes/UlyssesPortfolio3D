@@ -1,10 +1,9 @@
 import React, { useEffect } from "react";
 import { BrowserRouter } from "react-router-dom"
+import { motion, useScroll, useSpring } from "framer-motion";
 import { About, Contact, Experience, Hero, Navbar, Works, StarsCanvas } from './components'
 
 const App = () => {
-
-  // const blob = document.getElementById("blob")
 
   function handleMouseMove(event) {
     const { clientX, clientY } = event;
@@ -17,28 +16,21 @@ const App = () => {
 
   useEffect(() => {
     window.addEventListener("mousemove", handleMouseMove);
-
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
     };
   }, []);
 
-  const scrollProgress = document.getElementById('scroll-progress');
-
-
-  const height =
-    document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  console.log(height);
-
-  window.addEventListener('scroll', () => {
-    const scrollTop =
-      document.body.scrollTop || document.documentElement.scrollTop;
-    scrollProgress.style.width = `${(scrollTop / height) * 100}%`;
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001
   });
 
   return (
     <BrowserRouter>
-      <div id="scroll-progress"></div>
+      <motion.div className="progress-bar" style={{ scaleX }} />
       <div className="bg-hero-pattern br-cover bg-no-repeat bg-center">
         <div className="container">
           <div id="blob"></div>
@@ -47,8 +39,8 @@ const App = () => {
         <Navbar />
         <Hero />
       </div>
-      <Works />
       <About />
+      <Works />
       <Experience />
       <div className="relative z-0">
         <Contact />

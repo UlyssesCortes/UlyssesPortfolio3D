@@ -70,18 +70,18 @@ const ProjectCard = ({
 
 const Works = () => {
 
-  const expandDiv = document.getElementById("expand")
-  const speed = 2;
+  // const expandDiv = document.getElementById("expand")
+  // const speed = 2;
 
-  function expanding() {
-    const scrollTop = window.pageYOffset;
-    const scrollAndSpeed = (scrollTop / speed)
-    expandDiv.style.width = Math.min(Math.max(scrollAndSpeed, 20), 130) + "%";
-  }
+  // function expanding() {
+  //   const scrollTop = window.pageYOffset;
+  //   const scrollAndSpeed = (scrollTop / speed)
+  //   expandDiv.style.width = Math.min(Math.max(scrollAndSpeed, 20), 130) + "%";
+  // }
 
-  window.addEventListener('scroll', function () {
-    this.requestAnimationFrame(expanding);
-  }, false)
+  // window.addEventListener('scroll', function () {
+  //   this.requestAnimationFrame(expanding);
+  // }, false)
 
 
   return (
@@ -100,8 +100,7 @@ const Works = () => {
           ))}
         </div>
       </motion.div>
-      {/* <div id="trailer">
-      </div> */}
+
     </>
   )
 }

@@ -332,15 +332,18 @@ body {
   display: none;
 }
 
-#scroll-progress {
+.progress-bar {
   position: fixed;
   top: 0;
-  width: 0%;
+  left: 0;
+  right: 0;
   height: 4px;
   background: #7983ff;
-  z-index: 10000;
   border-radius: 50px;
+  transform-origin: 0%;
+  z-index: 999;
 }
+
 
 
 
