@@ -84,7 +84,7 @@ const experiences = [
 
 const projects = [
     {
-        name: "Grace Shoper",
+        name: "DigitalDepot®",
         description:
             "This ecommerce website is built with React for the front-end and Postgres and Express for the back-end, providing users with a complete ecommerce experience. Customers can easily add products to their cart, edit or delete items, and complete purchases. Meanwhile, admins can add products and manage customer orders.",
         tags: [

@@ -1,21 +1,35 @@
+import React, { useEffect } from "react";
 import { BrowserRouter } from "react-router-dom"
 import { About, Contact, Experience, Hero, Navbar, Works, StarsCanvas } from './components'
 
 const App = () => {
 
-  const blob = document.getElementById("blob");
-  window.addEventListener("mousemove", event => {
+  function handleMouseMove(event) {
     const { clientX, clientY } = event;
+    // console.log(clientX)
+    // console.log(clientY)
 
     blob.animate({
       left: `${clientX}px`,
       top: `${clientY}px`
     }, { duration: 3000, fill: "forwards" });
-  });
+  }
+
+  useEffect(() => {
+    window.addEventListener("mousemove", handleMouseMove);
+
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
 
   const scrollProgress = document.getElementById('scroll-progress');
+
+
+
   const height =
     document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  console.log(height);
 
   window.addEventListener('scroll', () => {
     const scrollTop =
