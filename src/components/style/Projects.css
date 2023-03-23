@@ -33,12 +33,13 @@
     gap: 120px;
     margin: 250px 0 250px 0;
     flex-wrap: wrap;
+    padding-bottom: 100px;
 }
 
 .projImg {
     display: flex;
     justify-content: center;
-    min-width: 550px;
+    min-width: 500px;
     min-height: 350px;
     border-radius: 10px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -50,7 +51,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     gap: 15px;
-    min-width: 450px;
+    min-width: 400px;
     min-height: 350px;
     color: black;
     font-size: 18px;
@@ -97,10 +98,7 @@
     opacity: 0.8;
 }
 
-.container2 {
-    width: 200px;
-    height: 200px;
-    /* overflow: hidden; */
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 30px;
+.myProjects {
+    background-color: #f3f7fb;
+    border-radius: 50px;
 }
