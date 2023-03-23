@@ -73,36 +73,23 @@ const Works = () => {
   const { scrollYProgress } = useViewportScroll();
   const scale = useTransform(scrollYProgress, [0, 1], [1, 1.5]);
 
-
   return (
     <>
+      <motion.div
+        className="container"
+        style={{
+          scale
+        }}
+      >
 
-      <div className="wrapper">
+        <div className='myProjects'>
+          <p id="projTitle" className={styles.sectionHeadText}>Projects</p>
 
-        <motion.div
-          className="container"
-          style={{
-            scale
-          }}
-        >
-          <motion.div variants={textVariant()}>
-
-            <div className='myProjects'>
-              <p id="projTitle" className={styles.sectionHeadText}>Projects</p>
-
-              {projects.map((project, index) => (
-                <ProjectCard key={`project-${index}`} index={index} {...project} />
-              ))}
-            </div>
-          </motion.div>
-
-
-        </motion.div>
-      </div>
-
-
-
-
+          {projects.map((project, index) => (
+            <ProjectCard key={`project-${index}`} index={index} {...project} />
+          ))}
+        </div>
+      </motion.div>
     </>
   )
 }
