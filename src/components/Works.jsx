@@ -1,6 +1,6 @@
 import React from "react";
 import Tilt from "react-tilt";
-import { motion } from "framer-motion";
+import { motion, useViewportScroll, useTransform } from "framer-motion";
 import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
@@ -70,36 +70,38 @@ const ProjectCard = ({
 
 const Works = () => {
 
-  const expandDiv = document.getElementById("expand")
-  const speed = 2;
-
-  function expanding() {
-    const scrollTop = window.pageYOffset;
-    const scrollAndSpeed = (scrollTop / speed)
-    expandDiv.style.width = Math.min(Math.max(scrollAndSpeed, 20), 130) + "%";
-  }
-
-  window.addEventListener('scroll', function () {
-    this.requestAnimationFrame(expanding);
-  }, false)
+  const { scrollYProgress } = useViewportScroll();
+  const scale = useTransform(scrollYProgress, [0, 1], [1, 1.5]);
 
 
   return (
     <>
-      <div id="container">
-        <div id="expand">
-          <p id="projTitle" className={styles.sectionHeadText}>Projects</p>
-        </div>
+
+      <div className="wrapper">
+
+        <motion.div
+          className="container"
+          style={{
+            scale
+          }}
+        >
+          <motion.div variants={textVariant()}>
+
+            <div className='myProjects'>
+              <p id="projTitle" className={styles.sectionHeadText}>Projects</p>
+
+              {projects.map((project, index) => (
+                <ProjectCard key={`project-${index}`} index={index} {...project} />
+              ))}
+            </div>
+          </motion.div>
+
+
+        </motion.div>
       </div>
 
-      <motion.div variants={textVariant()}>
 
-        <div className='myProjects'>
-          {projects.map((project, index) => (
-            <ProjectCard key={`project-${index}`} index={index} {...project} />
-          ))}
-        </div>
-      </motion.div>
+
 
     </>
   )
