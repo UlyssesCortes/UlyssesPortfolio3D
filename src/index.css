@@ -224,7 +224,6 @@ body {
 }
 
 #blob {
-  background-color: white;
   height: 34vmax;
   aspect-ratio: 1.5;
   position: absolute;

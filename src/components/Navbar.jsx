@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { styles } from '../styles';
 import { navLinks } from "../constants";
 import { menu, close } from '../assets';
+import './style/Nav.css'
+
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -38,7 +40,7 @@ const Navbar = () => {
             className='w-[28px] h-[28px] object-contain'
             onClick={() => setToggle(!toggle)}
           />
-
+          {/* Mobile nav starts here */}
           <div
             className={`${!toggle ? "hidden" : "flex"
               } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
@@ -59,6 +61,7 @@ const Navbar = () => {
               ))}
             </ul>
           </div>
+          {/* End */}
         </div>
       </div>
 

@@ -1,11 +1,10 @@
-import React from "react";
-import Tilt from "react-tilt";
+import React, { useEffect } from "react";
 import { motion, useViewportScroll, useTransform } from "framer-motion";
 import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
-import { fadeIn, textVariant } from "../utils/motion";
+import { fadeIn } from "../utils/motion";
 import './style/Projects.css'
 
 const ProjectCard = ({
@@ -16,16 +15,15 @@ const ProjectCard = ({
   image,
   source_code_link,
 }) => {
+
+
+
   return (
     <>
+
       <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)} className="projectContainer" data-type="link">
-        <Tilt
-          options={{
-            max: 10,
-            scale: 1,
-            speed: 5,
-          }}
-        >
+
+        <section className="projImageContainer">
           <div className='relative w-full h-[230px]'>
             <img
               src={image}
@@ -46,7 +44,7 @@ const ProjectCard = ({
               </div>
             </div>
           </div>
-        </Tilt>
+        </section>
 
         <div className='descriptionContainer'>
           <h3>{name}</h3>
@@ -70,11 +68,29 @@ const ProjectCard = ({
 
 const Works = () => {
 
+  function handleMouseMove(event) {
+    const { clientX, clientY } = event;
+
+    blobLink.animate({
+      left: `${clientX}px`,
+      top: `${clientY}px`
+    }, { duration: 3000, fill: "forwards" });
+  }
+
+  useEffect(() => {
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
+
   const { scrollYProgress } = useViewportScroll();
   const scale = useTransform(scrollYProgress, [0, 1], [1, 1.5]);
 
   return (
     <>
+      <div id="blobLink" className="cursorLink"></div>
+
       <motion.div
         id="projects"
         className="container"

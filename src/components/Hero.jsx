@@ -3,8 +3,6 @@ import { styles } from "../styles";
 import { arrow, js, react, postgres } from "../assets";
 import './style/Hero.css'
 
-
-
 const Hero = () => {
 
   return (
