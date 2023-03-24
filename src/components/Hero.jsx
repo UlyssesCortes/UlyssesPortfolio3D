@@ -26,7 +26,7 @@ const Hero = () => {
             </section>
           </div>
           <div className='buttonContainer'>
-            <a href='#container'>
+            <a href='#projects'>
               <button className="workBtn">My Projects</button>
             </a>
             <a href="https://drive.google.com/file/d/1rZdzNDJpHE-y9ccKSb94CeH7Ssay0V-t/view?usp=sharing" target="_blank">
@@ -34,7 +34,7 @@ const Hero = () => {
             </a>
           </div>
         </div>
-        <a href='#container'>
+        <a href='#about'>
           <div className='arroyBtn'>
             <img
               src={arrow}

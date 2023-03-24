@@ -76,6 +76,7 @@ const Works = () => {
   return (
     <>
       <motion.div
+        id="projects"
         className="container"
         style={{
           scale
