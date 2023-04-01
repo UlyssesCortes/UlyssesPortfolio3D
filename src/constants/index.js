@@ -1,7 +1,7 @@
 import {
     mobile,
     backend,
-    creator,
+    design,
     web,
     windowPros,
     frazierFarms,
@@ -40,7 +40,7 @@ const services = [
     },
     {
         title: "Web Designer",
-        icon: creator,
+        icon: design,
     },
 ];
 const experiences = [

@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { SectionWrapper } from "../hoc";
 
 import { styles } from "../styles";
 import { arrow, js, react, postgres } from "../assets";
@@ -10,13 +9,12 @@ const Hero = () => {
   return (
     <>
       <section className="heroSection">
-
         <div
           className="leftHeader"
         >
           <div>
             <section className="heroName">
-              <h1 className={`${styles.heroHeadText} text-white`}>
+              <h1 className={`${styles.heroHeadText}`}>
                 Hi, I'm <span className='text-[#915EFF]'>Ulysses</span>
               </h1>
               <p className={`${styles.heroSubText} mt-2 text-white-100`}>
@@ -29,7 +27,7 @@ const Hero = () => {
             <a href='#projects'>
               <button className="workBtn">My Projects</button>
             </a>
-            <a href="https://drive.google.com/file/d/1rZdzNDJpHE-y9ccKSb94CeH7Ssay0V-t/view?usp=sharing" target="_blank">
+            <a href="https://drive.google.com/file/d/1D5dLU9JYRD7B7n4EIvpNeG5sQOnW_DXk/view?usp=sharing" target="_blank">
               <button className="workBtn" >Resume</button>
             </a>
           </div>

@@ -344,6 +344,34 @@ body {
 }
 
 
+@media only screen and (min-width: 1550px) {
+
+  .heroName h1 {
+    font-size: 115px;
+  }
+
+  .heroName p {
+    font-size: 34px;
+    padding: 25px 0 25px 0;
+  }
+
+  .buttonContainer {
+    display: flex;
+    gap: 50px;
+    margin-left: 15px;
+  }
+
+  .workBtn {
+    scale: 1.2;
+  }
+
+  .rightHeader {
+    scale: 1.5;
+    margin-bottom: 150px;
+    margin-right: -100px;
+  }
+}
+
 
 
 @media only screen and (max-width: 1200px) {

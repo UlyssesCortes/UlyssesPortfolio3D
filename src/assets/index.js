@@ -1,7 +1,7 @@
-import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
-import web from "./web.png";
+import backend from "./api.png";
+import design from "./design.png";
+import mobile from "./react.png";
+import web from "./dev.png";
 import github from "./github.png";
 
 import logo from "./Logo.png";
@@ -24,7 +24,7 @@ import react from '../assets/atom.png'
 
 export {
   backend,
-  creator,
+  design,
   mobile,
   web,
   logo,
