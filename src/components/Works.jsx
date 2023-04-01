@@ -17,15 +17,34 @@ const ProjectCard = ({
   project_url,
 }) => {
 
+  function handleMouseMove(event) {
+    const { clientX, clientY } = event;
+    blobLink.animate({
+      left: `${clientX}px`,
+      top: `${clientY}px`
+    }, { duration: 3000, fill: "forwards" });
+  }
+
+  useEffect(() => {
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
+
   return (
     <>
-
       <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)} className="projectContainer" data-type="link">
 
         <section className="projImageContainer">
+
+          {/* <div id="blobLink" className="cursorLink"></div> */}
+
+
           <div className='relative w-full h-[230px]'
             onClick={() => window.open(project_url, "_blank")}
           >
+
             <img
               src={image}
               alt='project_image'
@@ -69,21 +88,7 @@ const ProjectCard = ({
 
 const Works = () => {
 
-  function handleMouseMove(event) {
-    const { clientX, clientY } = event;
 
-    blobLink.animate({
-      left: `${clientX}px`,
-      top: `${clientY}px`
-    }, { duration: 3000, fill: "forwards" });
-  }
-
-  useEffect(() => {
-    window.addEventListener("mousemove", handleMouseMove);
-    return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
-    };
-  }, []);
 
   const { scrollYProgress } = useViewportScroll();
   const scale = useTransform(scrollYProgress, [0, 1], [1, 1.5]);

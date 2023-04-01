@@ -219,6 +219,20 @@ body {
   }
 }
 
+@keyframes mobileRotate {
+  from {
+    rotate: 0deg;
+  }
+
+  50% {
+    scale: 1;
+  }
+
+  to {
+    rotate: 360deg;
+  }
+}
+
 .container {
   overflow-x: hidden;
 }
@@ -438,6 +452,8 @@ body {
     overflow-x: hidden;
     translate: -90%;
     max-width: 100%;
+    animation: mobileRotate 20s infinite;
+
   }
 
   .js {

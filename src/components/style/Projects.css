@@ -68,30 +68,9 @@
     border-radius: 50px;
 }
 
-/* .cursorLink {
-    height: 100px;
-    width: 100px;
-    position: absolute;
-    background-color: #333;
-    translate: -50% -50%;
-    left: 50%;
-    top: 50%;
-    border-radius: 50%;
-    opacity: 0;
-    z-index: 999;
-}
-
-.projImageContainer:hover .cursorLink {
-    scale: 2;
-    opacity: 1;
-    background-color: red;
-} */
-
-
-#blobLink {
+/* #blobLink {
     height: 20px;
     width: 20px;
-    position: fixed;
     background-color: red;
     border-radius: 50%;
     opacity: 0;
@@ -104,4 +83,10 @@
     opacity: 1;
     transform: scale(2);
     background-color: blue;
+    cursor: pointer;
+} */
+
+.projImageContainer:hover {
+    opacity: 1;
+    cursor: pointer;
 }

@@ -25,9 +25,9 @@ const Navbar = () => {
 
         <section className='subnavIcons'>
           <div className="hamburger" onClick={toggleMenu}>
-            <div class={`${isOpen && "bar1"}`}></div>
-            <div class={`${isOpen && "bar2"}`}></div>
-            <div class={`${isOpen && "bar3"}`}></div>
+            <div className={`${isOpen && "bar1"}`}></div>
+            <div className={`${isOpen && "bar2"}`}></div>
+            <div className={`${isOpen && "bar3"}`}></div>
           </div>
           <div className='navIcons'>
             <img className='githubIcon'
