@@ -3,9 +3,12 @@ import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
-import menu from "./menu.svg";
-import close from "./close.svg";
+
 import logo from "./Logo.png";
+
+import githubNav from './githubNav.png'
+import linkedin from './linkedin.png'
+
 
 import frazierFarms from "./company/FrazierFarm.png";
 import windowPros from "./company/squeegee.png";
@@ -26,8 +29,6 @@ export {
   web,
   logo,
   github,
-  menu,
-  close,
   frazierFarms,
   windowPros,
   graceShoper,
@@ -37,4 +38,6 @@ export {
   js,
   postgres,
   react,
+  githubNav,
+  linkedin,
 };

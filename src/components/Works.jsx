@@ -16,8 +16,6 @@ const ProjectCard = ({
   source_code_link,
 }) => {
 
-
-
   return (
     <>
 

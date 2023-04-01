@@ -456,4 +456,8 @@ body {
     margin-left: -200px;
     margin-top: 320px;
   }
+
+  .links-list a {
+    font-size: 4rem;
+  }
 }
