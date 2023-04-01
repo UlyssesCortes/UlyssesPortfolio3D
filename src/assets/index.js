@@ -7,6 +7,10 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 import logo from "./Logo.png";
 
+import githubNav from './githubNav.png'
+import linkedin from './linkedin.png'
+
+
 import frazierFarms from "./company/FrazierFarm.png";
 import windowPros from "./company/squeegee.png";
 
@@ -37,4 +41,6 @@ export {
   js,
   postgres,
   react,
+  githubNav,
+  linkedin,
 };

@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { styles } from '../styles';
 import { navLinks } from "../constants";
-import { menu, close } from '../assets';
+import { githubNav, linkedin } from '../assets';
 import './style/Nav.css'
 
 
@@ -20,12 +18,33 @@ const Navbar = () => {
 
   return (
     <>
+      <section className='subNav'>
 
-      <div className="hamburger" onClick={toggleMenu}>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+        <p className='name'>Ulysses Cortes</p>
+
+        <section className='subnavIcons'>
+
+          <div className="hamburger" onClick={toggleMenu}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div className='navIcons'>
+            <img className='githubIcon'
+              alt='gitHub'
+              src={githubNav} />
+
+            <img className='linedinIcon'
+              alt='gitHub'
+              src={linkedin} />
+          </div>
+
+
+        </section>
+
+      </section>
+
       <div className={`links-container ${isOpen && "active"}`}>
         <ul className='links-list'>
           <li>
