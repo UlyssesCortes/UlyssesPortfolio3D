@@ -106,6 +106,7 @@ const projects = [
         ],
         image: graceShoper,
         source_code_link: "https://github.com/The-Three-Codemigos/grace_shopper",
+        project_url: "https://digitaldepotinc.netlify.app/",
     },
     {
         name: "Fitness Tracker",
@@ -130,6 +131,8 @@ const projects = [
         ],
         image: fitness,
         source_code_link: "https://github.com/UlyssesCortes/UNIV_Fitness-tracker_FrontEnd",
+        project_url: "https://silly-torte-725ca7.netlify.app/",
+
     },
     {
         name: "Window Pros",
@@ -148,6 +151,8 @@ const projects = [
         ],
         image: windowProsIcon,
         source_code_link: "https://github.com/UlyssesCortes/WindowPro",
+        project_url: "https://windowprowspreview.netlify.app/",
+
     },
 ];
 

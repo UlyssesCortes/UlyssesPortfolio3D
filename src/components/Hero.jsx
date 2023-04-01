@@ -77,5 +77,4 @@ const Hero = () => {
   );
 };
 
-// export default Hero;
-export default SectionWrapper(Hero, "");
+export default Hero;
