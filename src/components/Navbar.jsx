@@ -16,6 +16,7 @@ const Navbar = () => {
     setIsOpen(false);
   };
 
+
   return (
     <>
       <section className='subNav'>
@@ -23,45 +24,33 @@ const Navbar = () => {
         <p className={`name ${isOpen && "nameVisible"}`}>Ulysses Cortes</p>
 
         <section className='subnavIcons'>
-
           <div className="hamburger" onClick={toggleMenu}>
             <div class={`${isOpen && "bar1"}`}></div>
             <div class={`${isOpen && "bar2"}`}></div>
             <div class={`${isOpen && "bar3"}`}></div>
           </div>
-
           <div className='navIcons'>
             <img className='githubIcon'
               alt='gitHub'
-              src={githubNav} />
+              src={githubNav}
+              onClick={() => window.open('https://github.com/UlyssesCortes')} />
 
             <img className='linedinIcon'
               alt='gitHub'
-              src={linkedin} />
+              src={linkedin}
+              onClick={() => window.open('https://www.linkedin.com/in/ulyssescp/')} />
           </div>
-
-
         </section>
 
       </section>
 
       <div className={`links-container ${isOpen && "active"}`}>
         <ul className='links-list'>
-          <li>
-            <a href="#about" onClick={closeMenu}>
-              About
-            </a>
-          </li>
-          <li>
-            <a href="#work" onClick={closeMenu}>
-              Work
-            </a>
-          </li>
-          <li>
-            <a href="#contact" onClick={closeMenu}>
-              Contact
-            </a>
-          </li>
+          {navLinks.map((nav) => (
+            <li key={nav.id}>
+              <a href={`#${nav.id}`} onClick={closeMenu}>{nav.title} </a>
+            </li>
+          ))}
         </ul>
       </div>
     </>

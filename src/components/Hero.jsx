@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import { SectionWrapper } from "../hoc";
+
 import { styles } from "../styles";
 import { arrow, js, react, postgres } from "../assets";
 import './style/Hero.css'
@@ -75,4 +77,5 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+// export default Hero;
+export default SectionWrapper(Hero, "");
