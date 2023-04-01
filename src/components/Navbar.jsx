@@ -20,14 +20,14 @@ const Navbar = () => {
     <>
       <section className='subNav'>
 
-        <p className='name'>Ulysses Cortes</p>
+        <p className={`name ${isOpen && "nameVisible"}`}>Ulysses Cortes</p>
 
         <section className='subnavIcons'>
 
           <div className="hamburger" onClick={toggleMenu}>
-            <span></span>
-            <span></span>
-            <span></span>
+            <div class={`${isOpen && "bar1"}`}></div>
+            <div class={`${isOpen && "bar2"}`}></div>
+            <div class={`${isOpen && "bar3"}`}></div>
           </div>
 
           <div className='navIcons'>
