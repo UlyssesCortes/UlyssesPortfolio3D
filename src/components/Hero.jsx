@@ -1,15 +1,20 @@
 import { motion } from "framer-motion";
-
 import { styles } from "../styles";
 import { arrow, js, react, postgres } from "../assets";
+import { slideIn } from "../utils/motion";
 import './style/Hero.css'
+
+
 
 const Hero = () => {
 
   return (
     <>
       <section className="heroSection">
-        <div
+        <motion.div
+          variants={slideIn("left", "spring", 0.2, 1)}
+          initial="hidden"
+          animate="show"
           className="leftHeader"
         >
           <div>
@@ -31,7 +36,8 @@ const Hero = () => {
               <button className="workBtn" >Resume</button>
             </a>
           </div>
-        </div>
+        </motion.div>
+
         <a href='#about'>
           <div className='arroyBtn'>
             <img
@@ -41,7 +47,12 @@ const Hero = () => {
             />
           </div>
         </a>
-        <section className="rightHeader">
+        <motion.div
+          variants={slideIn("right", "spring", 0.2, 1)}
+          initial="hidden"
+          animate="show"
+          className="rightHeader"
+        >
           <div className="js techIcon">
             <img
               src={js}
@@ -68,7 +79,8 @@ const Hero = () => {
               className='arrowImg techIconBig'
             />
           </div>
-        </section>
+        </motion.div>
+
       </section>
 
     </>
