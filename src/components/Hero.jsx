@@ -29,11 +29,11 @@ const Hero = () => {
             </section>
           </div>
           <div className='buttonContainer'>
-            <a href='#projects'>
-              <button className="workBtn">My Projects</button>
+            <a href='#projects' className="workBtn">
+              <button >My Projects</button>
             </a>
-            <a href="https://drive.google.com/file/d/1D5dLU9JYRD7B7n4EIvpNeG5sQOnW_DXk/view?usp=sharing" target="_blank">
-              <button className="workBtn" >Resume</button>
+            <a href="https://drive.google.com/file/d/1D5dLU9JYRD7B7n4EIvpNeG5sQOnW_DXk/view?usp=sharing" target="_blank" className="workBtn">
+              <button >Resume</button>
             </a>
           </div>
         </motion.div>

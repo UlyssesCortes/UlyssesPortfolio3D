@@ -86,7 +86,13 @@
     cursor: pointer;
 } */
 
+.projImageContainer {
+    transition: all ease-in-out .2s;
+
+}
+
 .projImageContainer:hover {
     opacity: 1;
     cursor: pointer;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
