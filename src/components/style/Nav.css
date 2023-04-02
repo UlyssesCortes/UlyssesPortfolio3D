@@ -7,6 +7,7 @@
     margin: 30px 30px -30px 30px;
 }
 
+
 .subnavIcons {
     display: flex;
     justify-content: space-between;
@@ -31,7 +32,6 @@
 .nameVisible {
     opacity: 1;
     transition: all 0.2s ease-in-out;
-
 }
 
 .githubIcon,
@@ -44,7 +44,7 @@
 }
 
 .linedinIcon {
-    margin-right: 85px;
+    margin-right: 80px;
 }
 
 .hamburger {
@@ -105,16 +105,17 @@
     content: "";
     position: absolute;
     left: 0;
-    bottom: 45%;
+    bottom: 4%;
     width: 100%;
-    height: 10px;
+    height: 14px;
     background-color: white;
     transform: scaleX(0);
-    transform-origin: left;
+    transform-origin: right;
     transition: transform 0.2s ease-out;
 }
 
 .links-list a:hover::before {
+    transform-origin: left;
     transform: scaleX(1);
 }
 
@@ -123,7 +124,7 @@
     width: 100%;
     opacity: 1;
     visibility: visible;
-    transform: all 0.3 ease-in-out;
+    transform: all 0.5 ease-in-out;
 }
 
 .bar3 {

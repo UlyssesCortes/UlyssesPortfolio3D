@@ -7,7 +7,9 @@ import github from "./github.png";
 import logo from "./Logo.png";
 
 import githubNav from './githubNav.png'
+import githubNavGrey from './githubNavGrey.png'
 import linkedin from './linkedin.png'
+import linkedinGrey from './linkedinGrey.png'
 
 
 import frazierFarms from "./company/FrazierFarm.png";
@@ -39,5 +41,7 @@ export {
   postgres,
   react,
   githubNav,
+  githubNavGrey,
   linkedin,
+  linkedinGrey,
 };

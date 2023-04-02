@@ -1,12 +1,17 @@
 import React, { useState } from 'react';
 import { navLinks } from "../constants";
-import { githubNav, linkedin } from '../assets';
+import { githubNav, linkedin, githubNavGrey, linkedinGrey } from '../assets';
 import './style/Nav.css'
 
 
 const Navbar = () => {
 
   const [isOpen, setIsOpen] = useState(false);
+  const [gitIsHovered, setGitIsHovered] = useState(false);
+  const [linkedinIsHovered, setLinkedinIsHovered] = useState(false);
+
+  const gitHubNavIcon = gitIsHovered ? githubNavGrey : githubNav;
+  const linkedinNavIcon = linkedinIsHovered ? linkedinGrey : linkedin;
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -16,9 +21,8 @@ const Navbar = () => {
     setIsOpen(false);
   };
 
-
   return (
-    <>
+    <body>
       <section className='subNav'>
 
         <p className={`name ${isOpen && "nameVisible"}`}>Ulysses Cortes</p>
@@ -32,13 +36,18 @@ const Navbar = () => {
           <div className='navIcons'>
             <img className='githubIcon'
               alt='gitHub'
-              src={githubNav}
-              onClick={() => window.open('https://github.com/UlyssesCortes')} />
+              src={gitHubNavIcon}
+              onClick={() => window.open('https://github.com/UlyssesCortes')}
+              onMouseEnter={() => setGitIsHovered(true)}
+              onMouseLeave={() => setGitIsHovered(false)}
+            />
 
             <img className='linedinIcon'
               alt='gitHub'
-              src={linkedin}
-              onClick={() => window.open('https://www.linkedin.com/in/ulyssescp/')} />
+              src={linkedinNavIcon}
+              onClick={() => window.open('https://www.linkedin.com/in/ulyssescp/')}
+              onMouseEnter={() => setLinkedinIsHovered(true)}
+              onMouseLeave={() => setLinkedinIsHovered(false)} />
           </div>
         </section>
 
@@ -53,7 +62,7 @@ const Navbar = () => {
           ))}
         </ul>
       </div>
-    </>
+    </body>
   )
 }
 

@@ -388,6 +388,13 @@ body {
     flex-direction: column;
     padding: 0;
     margin-left: -45px;
+    gap: 0;
+  }
+
+  .myProjects {
+    gap: 0;
+    scale: .9;
+    padding: 15px;
   }
 
   .projectContainer:nth-child(even) {
@@ -401,7 +408,13 @@ body {
     align-items: center;
     min-width: 300px;
     min-height: 250px;
-    scale: .85;
+    scale: .9;
+    margin-left: 12px;
+  }
+
+  .gitLinkSource {
+    scale: .6;
+    margin-right: 15px;
   }
 
   .descriptionContainer {
@@ -464,5 +477,10 @@ body {
 
   .links-list a {
     font-size: 4rem;
+  }
+
+  .subNav {
+    margin: 20px 5px -80px 20px;
+
   }
 }

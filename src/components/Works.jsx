@@ -40,7 +40,6 @@ const ProjectCard = ({
 
           {/* <div id="blobLink" className="cursorLink"></div> */}
 
-
           <div className='relative w-full h-[230px]'
             onClick={() => window.open(project_url, "_blank")}
           >
@@ -54,12 +53,12 @@ const ProjectCard = ({
             <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
               <div
                 onClick={() => window.open(source_code_link, "_blank")}
-                className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+                className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer gitLinkSource'
               >
                 <img
                   src={github}
                   alt='source code'
-                  className='w-1/2 h-1/2 object-contain'
+                  className='w-1/2 h-1/2 object-contain '
                 />
               </div>
             </div>
@@ -99,7 +98,6 @@ const Works = () => {
 
       <motion.div
         id="projects"
-        className="container"
         style={{
           scale
         }}
