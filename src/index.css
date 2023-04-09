@@ -263,7 +263,7 @@ body {
   overflow: hidden;
 }
 
-.aboutCard {
+.aboutCardImgae {
   background-color: rgba(46, 45, 45, 0.918);
   backdrop-filter: blur(31px);
 }
@@ -361,7 +361,7 @@ body {
   }
 
   .heroSection {
-    margin-top: 100px;
+    margin-top: 50px;
   }
 
   .heroName {
@@ -371,7 +371,6 @@ body {
   .leftHeader {
     width: 100%;
     justify-content: center;
-    align-items: center;
     text-align: center;
   }
 
@@ -380,6 +379,13 @@ body {
     justify-content: center;
     width: 100%;
     margin-top: 50px;
+  }
+
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scale: .9;
   }
 
   #container {
@@ -497,7 +503,21 @@ body {
 
   /* About section */
   .aboutCard {
-    scale: .6;
+    width: 150px;
+  }
+
+  .aboutCardImgae {
+    height: 150px;
+  }
+
+  .aboutCardImgae h3 {
+    font-size: 12px;
+  }
+
+  .aboutCardsContainer {
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: -250px;
   }
 
 }

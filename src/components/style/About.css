@@ -1,0 +1,22 @@
+.aboutCardImgae {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    height: 280px;
+    font-size: 12px;
+}
+
+.aboutCardsContainer {
+    display: flex;
+    /* flex-direction: row; */
+    margin-top: 40px;
+    flex-wrap: wrap;
+    gap: 40px;
+
+}
+
+.aboutCard {
+    width: 250px;
+}
