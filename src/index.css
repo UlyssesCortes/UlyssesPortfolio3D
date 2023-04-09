@@ -508,6 +508,7 @@ body {
 
   .aboutCardImgae {
     height: 150px;
+
   }
 
   .aboutCardImgae h3 {
@@ -518,6 +519,7 @@ body {
     flex-direction: row;
     justify-content: center;
     margin-bottom: -250px;
+    gap: 40px;
   }
 
 }

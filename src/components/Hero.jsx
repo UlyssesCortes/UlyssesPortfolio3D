@@ -4,8 +4,6 @@ import { arrow, js, react, postgres } from "../assets";
 import { slideIn } from "../utils/motion";
 import './style/Hero.css'
 
-
-
 const Hero = () => {
 
   return (
