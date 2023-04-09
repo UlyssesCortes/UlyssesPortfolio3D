@@ -368,11 +368,18 @@ body {
     padding: 25px;
   }
 
+  .leftHeader {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
   .rightHeader {
     display: flex;
     justify-content: center;
-    max-width: 100%;
-    margin-top: -150px;
+    width: 100%;
+    margin-top: 50px;
   }
 
   #container {
@@ -483,4 +490,14 @@ body {
     margin: 20px 5px -80px 20px;
 
   }
+
+  .aboutSec {
+    margin-top: 280px;
+  }
+
+  /* About section */
+  .aboutCard {
+    scale: .6;
+  }
+
 }

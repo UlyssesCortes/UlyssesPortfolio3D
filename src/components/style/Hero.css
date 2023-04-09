@@ -8,16 +8,18 @@
     width: 100%;
 }
 
+
 .leftHeader {
     display: flex;
     flex-direction: column;
     margin: auto;
-    min-width: 35%;
+    width: 45%;
     height: 60vh;
 }
 
 .rightHeader {
-    min-width: 35%;
+    position: relative;
+    width: 35%;
     height: 60vh;
     margin: auto;
 }
