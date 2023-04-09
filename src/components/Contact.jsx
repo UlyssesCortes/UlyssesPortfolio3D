@@ -16,6 +16,7 @@ const Contact = () => {
   });
 
   const [loading, setLoading] = useState(false);
+  const [emailSent, setEmailSent] = useState(false)
   const [notName, setNotName] = useState(false)
   const [notEmail, setNotEmail] = useState(false)
   const [notMessage, setNotMessage] = useState(false)
@@ -45,7 +46,6 @@ const Contact = () => {
 
     } else {
 
-
       setLoading(true);
 
       emailjs
@@ -65,6 +65,7 @@ const Contact = () => {
           () => {
             setLoading(false);
             alert("Thank you. I will get back to you as soon as possible.");
+            // setEmailSent(true)
 
             setForm({
               name: "",
