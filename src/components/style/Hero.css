@@ -35,7 +35,6 @@
             rgba(255, 255, 255, 0.1),
             rgba(255, 255, 255, 0.1));
     backdrop-filter: blur(21px);
-    cursor: pointer;
     outline: 1px solid;
     outline-color: rgba(255, 255, 255, .5);
     transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);

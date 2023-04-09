@@ -10,3 +10,10 @@
 .sendBtn:hover {
     box-shadow: inset 0 0 10px rgba(255, 255, 255, .5), 0 0 10px rgba(255, 255, 255, .2);
 }
+
+.formError {
+    /* position: absolute; */
+    color: rgb(252, 78, 78);
+    /* margin-top: 100px; */
+    font-size: 16px;
+}
