@@ -6,12 +6,14 @@ import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
+import './style/About.css'
+
 
 const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className='xs:w-[250px] w-full'>
+  <Tilt className='aboutCard'>
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card '
+      className='shadow-card '
     >
 
       <div
@@ -20,7 +22,7 @@ const ServiceCard = ({ index, title, icon }) => (
           scale: 1,
           speed: 450,
         }}
-        className='rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col aboutCard'
+        className=' py-5 px-12  aboutCardImgae'
       >
         <img
           src={icon}
@@ -41,7 +43,7 @@ const About = () => {
   return (
     <>
 
-      <motion.div variants={textVariant()}>
+      <motion.div variants={textVariant()} className="aboutSec">
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
@@ -53,7 +55,7 @@ const About = () => {
         I'm a skilled software developer with experience in JavaScript, and expertise in frameworks like React and Nodejs. I'm a quick learner and collaborate closely with clients to create efficient, scalable, and user-friendly solutions that solve real-world problems. Let's work together to bring your ideas to life!
       </motion.p>
 
-      <div className='mt-20 flex flex-wrap gap-10'>
+      <div className=' aboutCardsContainer'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
