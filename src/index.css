@@ -504,5 +504,16 @@ body {
 
   .projectContainer {
     gap: 40px;
+    /* padding: 0 25px 0 25px; */
+  }
+
+  .projImg {
+    min-height: 220px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .projectContainer {
+    padding: 0 25px 0 25px;
   }
 }

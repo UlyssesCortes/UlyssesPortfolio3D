@@ -69,12 +69,11 @@
 
 .gitLinkSource {
     position: absolute;
-    /* margin-top: -35px; */
     margin: -35px 0 0 10px;
-
     width: 25px;
     height: 25px;
     z-index: 4;
     background-color: rgb(0, 0, 0);
     border-radius: 50%;
+    cursor: grab;
 }

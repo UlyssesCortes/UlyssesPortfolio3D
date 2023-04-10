@@ -1,14 +1,12 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { motion, useViewportScroll, useTransform } from "framer-motion";
 import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
-import { fadeIn } from "../utils/motion";
 import './style/Projects.css'
 
 const ProjectCard = ({
-  index,
   name,
   description,
   tags,
@@ -17,28 +15,10 @@ const ProjectCard = ({
   project_url,
 }) => {
 
-  function handleMouseMove(event) {
-    const { clientX, clientY } = event;
-    blobLink.animate({
-      left: `${clientX}px`,
-      top: `${clientY}px`
-    }, { duration: 3000, fill: "forwards" });
-  }
-
-  useEffect(() => {
-    window.addEventListener("mousemove", handleMouseMove);
-    return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
-    };
-  }, []);
-
   return (
     <>
-      <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)} className="projectContainer" data-type="link">
-
+      <div className="projectContainer" data-type="link">
         <section className="projImageContainer">
-
-
           <div className=' projImgContainer'
             onClick={() => window.open(project_url, "_blank")}
           >
@@ -74,14 +54,12 @@ const ProjectCard = ({
             ))}
           </div>
         </div>
-      </motion.div>
+      </div>
     </>
   );
 };
 
 const Works = () => {
-
-
 
   const { scrollYProgress } = useViewportScroll();
   const scale = useTransform(scrollYProgress, [0, 1], [1, 1.5]);
