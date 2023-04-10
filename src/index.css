@@ -289,17 +289,17 @@ body {
 }
 
 .arrowImg {
-  object-fit: contain;
   min-width: 50px;
   min-height: 50px;
   transition: all ease-in .3s;
-
 }
 
 .arroyBtn:hover {
   scale: .4;
   opacity: 1;
-  background-color: #804dee8f;
+  background-color: #a88ceb8f;
+  border: 2px solid #d2d2d4;
+
 }
 
 .arroyBtn:hover>.arrowImg {

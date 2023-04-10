@@ -40,6 +40,7 @@
     outline: 1px solid;
     outline-color: rgba(255, 255, 255, .5);
     transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+
 }
 
 .techIcon:hover {
@@ -54,36 +55,50 @@
     font-size: 48px;
     margin-left: 350px;
     margin-top: 180px;
+    animation: appearText 1.9s;
+    transition: all ease-in .5s;
 }
 
 .css {
     margin-left: 50px;
     margin-top: 200px;
+    animation: appearText 1.5s;
+    transition: all ease-in .5s;
 }
 
 .html {
     margin-left: -50px;
     margin-top: 320px;
+    animation: appearText 2.2s;
+    transition: all ease-in .5s;
 }
 
 .react {
     width: 150px;
     height: 150px;
     font-size: 30px;
+    animation: appearText 1s;
+    transition: all ease-in .5s;
 }
 
 .nodejs {
     margin-left: 220px;
+    animation: appearText 1.2s;
+    transition: all ease-in .5s;
 }
 
 .threejs {
     margin-left: 280px;
     margin-top: 380px;
+    animation: appearText 2.6s;
+    transition: all ease-in .5s;
 }
 
 .express {
     margin-left: 200px;
     margin-top: 180px;
+    animation: appearText 1.7s;
+    transition: all ease-in .5s;
 }
 
 .postgres {
@@ -92,6 +107,8 @@
     font-size: 28px;
     margin-left: 100px;
     margin-top: 350px;
+    animation: appearText 2.4s;
+    transition: all ease-in .5s;
 }
 
 .js:hover,
@@ -141,6 +158,8 @@
 .buttonContainer {
     display: flex;
     align-items: center;
+    animation: appearText 2s;
+    transition: all ease-in 1s;
 }
 
 @keyframes shake {
@@ -165,4 +184,29 @@
     60% {
         transform: translate3d(2px, 0, 0);
     }
+}
+
+.heroName {
+    animation: appearText 1s;
+    transition: all ease-in 1s;
+}
+
+.sloganHero {
+
+    animation: appearText 1.5s;
+    transition: all ease-in 1s;
+}
+
+@keyframes appearText {
+    0% {
+        transform: translate(0px, 150px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+        opacity: 1;
+
+    }
+
 }
