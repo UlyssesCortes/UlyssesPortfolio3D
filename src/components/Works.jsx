@@ -38,9 +38,8 @@ const ProjectCard = ({
 
         <section className="projImageContainer">
 
-          {/* <div id="blobLink" className="cursorLink"></div> */}
 
-          <div className='relative w-full h-[230px]'
+          <div className=' projImgContainer'
             onClick={() => window.open(project_url, "_blank")}
           >
 
@@ -94,7 +93,6 @@ const Works = () => {
 
   return (
     <>
-      <div id="blobLink" className="cursorLink"></div>
 
       <motion.div
         id="projects"
