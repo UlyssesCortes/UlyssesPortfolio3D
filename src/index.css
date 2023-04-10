@@ -350,6 +350,21 @@ body {
     margin-bottom: 150px;
     margin-right: -100px;
   }
+
+
+}
+
+@media only screen and (min-width: 1000px) {
+  .projectContainer {
+    flex-wrap: nowrap;
+  }
+
+  .projImgContainer {
+    min-width: 500px;
+    min-height: 350px;
+  }
+
+
 }
 
 
@@ -361,7 +376,7 @@ body {
   }
 
   .heroSection {
-    margin-top: 50px;
+    margin-top: 0px;
   }
 
   .heroName {
@@ -386,52 +401,6 @@ body {
     justify-content: center;
     align-items: center;
     scale: .9;
-  }
-
-  #container {
-    margin-top: 340px;
-  }
-
-  #expand {
-    min-height: 3050px;
-  }
-
-  .projectContainer {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin-left: -45px;
-    gap: 0;
-  }
-
-  .myProjects {
-    gap: 0;
-    scale: .9;
-    padding: 15px;
-  }
-
-  .projectContainer:nth-child(even) {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .projImg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 300px;
-    min-height: 250px;
-    scale: .9;
-    margin-left: 12px;
-  }
-
-  .gitLinkSource {
-    scale: .6;
-    margin-right: 15px;
-  }
-
-  .descriptionContainer {
-    padding: 50px;
   }
 
   #blob {
@@ -522,4 +491,18 @@ body {
     gap: 40px;
   }
 
+  /* Projects */
+  .myProjects {
+    margin-top: 350px;
+    margin-bottom: 350px;
+    gap: 80px;
+  }
+
+  .descriptionContainer {
+    gap: 10px;
+  }
+
+  .projectContainer {
+    gap: 40px;
+  }
 }
