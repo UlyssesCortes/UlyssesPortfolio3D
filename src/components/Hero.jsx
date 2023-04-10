@@ -1,7 +1,5 @@
-import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { arrow, js, react, postgres } from "../assets";
-import { slideIn } from "../utils/motion";
 import './style/Hero.css'
 
 const Hero = () => {
@@ -9,8 +7,7 @@ const Hero = () => {
   return (
     <>
       <section className="heroSection">
-        <motion.div
-          variants={slideIn("left", "spring", 0.2, 1)}
+        <div
           initial="hidden"
           animate="show"
           className="leftHeader"
@@ -20,7 +17,7 @@ const Hero = () => {
               <h1 className={`${styles.heroHeadText}`}>
                 Hi, I'm <span className='text-[#915EFF]'>Ulysses</span>
               </h1>
-              <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+              <p className={`${styles.heroSubText} mt-2 text-white-100 sloganHero`}>
                 I design and develop, user <br className='sm:block hidden' />
                 interfaces and web applications
               </p>
@@ -34,7 +31,7 @@ const Hero = () => {
               <button >Resume</button>
             </a>
           </div>
-        </motion.div>
+        </div>
 
         <a href='#about'>
           <div className='arroyBtn'>
@@ -45,8 +42,7 @@ const Hero = () => {
             />
           </div>
         </a>
-        <motion.div
-          variants={slideIn("right", "spring", 0.2, 1)}
+        <div
           initial="hidden"
           animate="show"
           className="rightHeader"
@@ -77,7 +73,7 @@ const Hero = () => {
               className='arrowImg techIconBig'
             />
           </div>
-        </motion.div>
+        </div>
 
       </section>
 
