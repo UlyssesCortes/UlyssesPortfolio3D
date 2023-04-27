@@ -84,29 +84,29 @@ const experiences = [
 
 const projects = [
     {
-        name: "DigitalDepot®",
+        name: "Window Pros",
         description:
-            "This ecommerce website is built with React for the front-end and Postgres and Express for the back-end, providing users with a complete ecommerce experience. Customers can easily add products to their cart, edit or delete items, and complete purchases. Meanwhile, admins can add products and manage customer orders.",
+            "This React-built website has a clean and responsive UI that allows customers to generate quick online quotes for window cleaning services. It features a service list, pricing calculator, and contact form to help customers select services and request quotes easily. The website is optimized for various devices, ensuring a seamless experience for customers.",
         tags: [
             {
                 name: "React"
             },
             {
-                name: "Express"
+                name: "JavaScript"
             },
             {
-                name: "Postgress"
+                name: "HTML/CSS"
             },
             {
-                name: "Nodejs"
+                name: "Spline"
             },
             {
-                name: "CSS"
+                name: "Figma"
             },
         ],
-        image: graceShoper,
-        source_code_link: "https://github.com/The-Three-Codemigos/grace_shopper",
-        project_url: "https://digitaldepotinc.netlify.app/",
+        image: windowProsIcon,
+        source_code_link: "https://github.com/UlyssesCortes/WindowProsWebsite",
+        project_url: "https://windowprosoceanside.netlify.app/",
     },
     {
         name: "Fitness Tracker",
@@ -117,6 +117,9 @@ const projects = [
                 name: "React"
             },
             {
+                name: "JavaScript"
+            },
+            {
                 name: "Express"
             },
             {
@@ -126,34 +129,42 @@ const projects = [
                 name: "Nodejs"
             },
             {
-                name: "CSS"
+                name: "HTML/CSS"
             },
         ],
         image: fitness,
         source_code_link: "https://github.com/UlyssesCortes/UNIV_Fitness-tracker_FrontEnd",
         project_url: "https://silly-torte-725ca7.netlify.app/",
-
     },
     {
-        name: "Window Pros",
+        name: "DigitalDepot®",
         description:
-            "This React-built website has a clean and responsive UI that allows customers to generate quick online quotes for window cleaning services. It features a service list, pricing calculator, and contact form to help customers select services and request quotes easily. The website is optimized for various devices, ensuring a seamless experience for customers.",
+            "This ecommerce website is built with React for the front-end and Postgres and Express for the back-end, providing users with a complete ecommerce experience. Customers can easily add products to their cart, edit or delete items, and complete purchases. Meanwhile, admins can add products and manage customer orders.",
         tags: [
             {
                 name: "React"
             },
             {
-                name: "Spline"
+                name: "JavaScript"
             },
             {
-                name: "CSS"
+                name: "Express"
+            },
+            {
+                name: "Postgress"
+            },
+            {
+                name: "Nodejs"
+            },
+            {
+                name: "HTML/CSS"
             },
         ],
-        image: windowProsIcon,
-        source_code_link: "https://github.com/UlyssesCortes/WindowPro",
-        project_url: "https://windowprowspreview.netlify.app/",
-
+        image: graceShoper,
+        source_code_link: "https://github.com/The-Three-Codemigos/grace_shopper",
+        project_url: "https://digitaldepotinc.netlify.app/",
     },
+
 ];
 
 export { services, experiences, projects };

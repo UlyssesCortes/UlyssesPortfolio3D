@@ -504,11 +504,10 @@ body {
 
   .projectContainer {
     gap: 40px;
-    /* padding: 0 25px 0 25px; */
   }
 
   .projImg {
-    min-height: 220px;
+    min-height: 180px;
   }
 }
 
