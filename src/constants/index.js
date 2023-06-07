@@ -84,7 +84,7 @@ const experiences = [
 
 const projects = [
     {
-        name: "DigitalDepot®",
+        name: "DigitalDepot",
         description:
             "Experience seamless shopping on my furniture ecommerce website with intuitive functionalities and impressive features. Explore home shop categories and special offers with ease. Effortlessly discover products using smart search and convenient filters. Enjoy smooth image previews with Framer Motion animation. This user friendly platform reflects my development skills and aims to provide a delightful experience for furniture enthusiasts.",
         tags: [
