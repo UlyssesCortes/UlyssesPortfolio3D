@@ -15,7 +15,7 @@ import linkedinGrey from './linkedinGrey.png'
 import frazierFarms from "./company/FrazierFarm.png";
 import windowPros from "./company/squeegee.png";
 
-import graceShoper from "./GraceShoper.png";
+import graceShoper from "./digitalDepot3.png";
 import fitness from "./FitnessTracker.png";
 import windowProsIcon from "./WindowPros.png";
 import arrow from '../assets/arrow.png'

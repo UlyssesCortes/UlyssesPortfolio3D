@@ -31,7 +31,7 @@ const services = [
         icon: web,
     },
     {
-        title: "React Native Developer",
+        title: "React Developer",
         icon: mobile,
     },
     {
@@ -84,9 +84,9 @@ const experiences = [
 
 const projects = [
     {
-        name: "Window Pros",
+        name: "DigitalDepot®",
         description:
-            "This React-built website has a clean and responsive UI that allows customers to generate quick online quotes for window cleaning services. It features a service list, pricing calculator, and contact form to help customers select services and request quotes easily. The website is optimized for various devices, ensuring a seamless experience for customers.",
+            "Experience seamless shopping on my furniture ecommerce website with intuitive functionalities and impressive features. Explore home shop categories and special offers with ease. Effortlessly discover products using smart search and convenient filters. Enjoy smooth image previews with Framer Motion animation. This user friendly platform reflects my development skills and aims to provide a delightful experience for furniture enthusiasts.",
         tags: [
             {
                 name: "React"
@@ -95,18 +95,30 @@ const projects = [
                 name: "JavaScript"
             },
             {
+                name: "Express"
+            },
+            {
+                name: "Postgress"
+            },
+            {
+                name: "Nodejs"
+            },
+            {
                 name: "HTML/CSS"
             },
             {
-                name: "Spline"
+                name: "Stripe"
             },
             {
-                name: "Figma"
+                name: "Framer Motion"
+            },
+            {
+                name: "Lottie"
             },
         ],
-        image: windowProsIcon,
-        source_code_link: "https://github.com/UlyssesCortes/WindowProsWebsite",
-        project_url: "https://windowprosoceanside.netlify.app/",
+        image: graceShoper,
+        source_code_link: "https://github.com/UlyssesCortes/digitalDepot",
+        project_url: "https://digitaldepot.website/",
     },
     {
         name: "Fitness Tracker",
@@ -137,9 +149,9 @@ const projects = [
         project_url: "https://silly-torte-725ca7.netlify.app/",
     },
     {
-        name: "DigitalDepot®",
+        name: "Window Pros",
         description:
-            "This ecommerce website is built with React for the front-end and Postgres and Express for the back-end, providing users with a complete ecommerce experience. Customers can easily add products to their cart, edit or delete items, and complete purchases. Meanwhile, admins can add products and manage customer orders.",
+            "This React-built website has a clean and responsive UI that allows customers to generate quick online quotes for window cleaning services. It features a service list, pricing calculator, and contact form to help customers select services and request quotes easily. The website is optimized for various devices, ensuring a seamless experience for customers.",
         tags: [
             {
                 name: "React"
@@ -148,22 +160,19 @@ const projects = [
                 name: "JavaScript"
             },
             {
-                name: "Express"
-            },
-            {
-                name: "Postgress"
-            },
-            {
-                name: "Nodejs"
-            },
-            {
                 name: "HTML/CSS"
             },
+            {
+                name: "Spline"
+            },
+            {
+                name: "Figma"
+            },
         ],
-        image: graceShoper,
-        source_code_link: "https://github.com/The-Three-Codemigos/grace_shopper",
-        project_url: "https://digitaldepotinc.netlify.app/",
-    },
+        image: windowProsIcon,
+        source_code_link: "https://github.com/UlyssesCortes/WindowProsWebsite",
+        project_url: "https://windowprosoceanside.netlify.app/",
+    }
 
 ];
 
