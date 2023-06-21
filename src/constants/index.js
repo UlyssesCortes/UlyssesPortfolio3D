@@ -5,6 +5,7 @@ import {
     web,
     windowPros,
     frazierFarms,
+    coding,
     graceShoper,
     fitness,
     windowProsIcon,
@@ -27,11 +28,11 @@ export const navLinks = [
 
 const services = [
     {
-        title: "Web Developer",
+        title: "Fullstack Developer",
         icon: web,
     },
     {
-        title: "React Developer",
+        title: "Frontend Developer",
         icon: mobile,
     },
     {
@@ -47,7 +48,7 @@ const experiences = [
     {
         title: "Freelance Web Developer",
         company_name: "WindowPros",
-        icon: windowPros,
+        icon: coding,
         iconBg: "#E6DEDD",
         date: "Mar 2023 – Current",
         points: [

@@ -10,12 +10,11 @@ import './style/About.css'
 
 
 const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className='aboutCard'>
+  <section className='aboutCard'>
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className='shadow-card '
+    // className='shadow-card'
     >
-
       <div
         options={{
           max: 45,
@@ -35,7 +34,7 @@ const ServiceCard = ({ index, title, icon }) => (
         </h3>
       </div>
     </motion.div>
-  </Tilt>
+  </section>
 );
 
 const About = () => {
@@ -52,7 +51,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled software developer with experience in JavaScript, and expertise in frameworks like React and Nodejs. I'm a quick learner and collaborate closely with clients to create efficient, scalable, and user-friendly solutions that solve real-world problems. Let's work together to bring your ideas to life!
+        I'm a bootcamp graduate skilled in team project-based work. With a passion for collaboration, I excel at working closely with others to achieve shared goals. My practical knowledge includes JavaScript, React, NodeJs, PostgresSQL,  ExpressJs and HTML/CSS. I thrive in fast-paced environments and continually seek opportunities to expand my skill set. Let's connect and explore potential collaborations!
       </motion.p>
 
       <div className=' aboutCardsContainer'>

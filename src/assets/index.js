@@ -14,6 +14,7 @@ import linkedinGrey from './linkedinGrey.png'
 
 import frazierFarms from "./company/FrazierFarm.png";
 import windowPros from "./company/squeegee.png";
+import coding from "./company/coding.png";
 
 import graceShoper from "./digitalDepot3.png";
 import fitness from "./FitnessTracker.png";
@@ -32,6 +33,7 @@ export {
   logo,
   github,
   frazierFarms,
+  coding,
   windowPros,
   graceShoper,
   fitness,

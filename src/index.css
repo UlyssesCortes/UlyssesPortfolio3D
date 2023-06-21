@@ -511,6 +511,12 @@ body {
   }
 }
 
+@media only screen and (max-width: 650px) {
+  .container {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 450px) {
   .projectContainer {
     padding: 0 25px 0 25px;

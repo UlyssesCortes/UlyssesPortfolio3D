@@ -31,7 +31,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <motion.div className="progress-bar" style={{ scaleX }} />
-      <div className="bg-hero-pattern br-cover bg-no-repeat bg-center">
+      <div className="bg-hero-pattern br-cover bg-no-repeat bg-center heroTop" >
         <div className="container">
           <div id="blob"></div>
           <div id="blur"></div>

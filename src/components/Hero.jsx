@@ -27,6 +27,7 @@ const Hero = () => {
             <a href='#projects' className="workBtn">
               <button >My Projects</button>
             </a>
+            {/* <a href="https://drive.google.com/file/d/1FoWrLKNtEqDvZl8eRGJDe43rcE8-UOT2/view?usp=sharing" target="_blank" className="workBtn"> */}
             <a href="https://drive.google.com/file/d/1FoWrLKNtEqDvZl8eRGJDe43rcE8-UOT2/view?usp=sharing" target="_blank" className="workBtn">
               <button >Resume</button>
             </a>
