@@ -8,13 +8,15 @@
     font-size: 12px;
 }
 
+.about {
+    /* outline: auto; */
+}
+
 .aboutCardsContainer {
     display: flex;
-    /* flex-direction: row; */
     margin-top: 40px;
     flex-wrap: wrap;
     gap: 40px;
-
 }
 
 .aboutCard {

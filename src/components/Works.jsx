@@ -27,6 +27,7 @@ const ProjectCard = ({
               src={image}
               alt='project_image'
               className='projImg'
+              loading="lazy"
             />
           </div>
 
@@ -35,7 +36,7 @@ const ProjectCard = ({
             alt='githubCode'
             className='gitLinkSource'
             onClick={() => window.open(source_code_link, "_blank")}
-
+            loading="lazy"
           />
         </section>
 
@@ -62,7 +63,7 @@ const ProjectCard = ({
 const Works = () => {
 
   const { scrollYProgress } = useViewportScroll();
-  const scale = useTransform(scrollYProgress, [0, 1], [1, 1.5]);
+  const scale = useTransform(scrollYProgress, [0, 1], [1, 1.2]);
 
   return (
     <>

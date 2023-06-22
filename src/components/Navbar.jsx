@@ -40,6 +40,7 @@ const Navbar = () => {
               onClick={() => window.open('https://github.com/UlyssesCortes')}
               onMouseEnter={() => setGitIsHovered(true)}
               onMouseLeave={() => setGitIsHovered(false)}
+              loading="lazy"
             />
 
             <img className='linedinIcon'
@@ -47,7 +48,9 @@ const Navbar = () => {
               src={linkedinNavIcon}
               onClick={() => window.open('https://www.linkedin.com/in/ulyssescp/')}
               onMouseEnter={() => setLinkedinIsHovered(true)}
-              onMouseLeave={() => setLinkedinIsHovered(false)} />
+              onMouseLeave={() => setLinkedinIsHovered(false)}
+              loading="lazy"
+            />
           </div>
         </section>
 

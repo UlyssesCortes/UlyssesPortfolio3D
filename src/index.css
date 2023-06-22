@@ -275,31 +275,28 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 12%;
-  height: 12%;
+  width: 200px;
+  height: 200px;
   background-color: transparent;
   border: 2px solid #804dee;
-  margin-bottom: -70px;
-  margin-left: -40px;
+  /* margin-top: -300px; */
   border-radius: 50%;
   padding: 11%;
   cursor: pointer;
-  transition: all ease-in 0.5s;
+  transition: all ease-in 0.2s;
   opacity: 0.6;
 }
 
 .arrowImg {
   min-width: 50px;
   min-height: 50px;
-  transition: all ease-in .3s;
+  transition: all ease-in .1s;
 }
 
 .arroyBtn:hover {
-  scale: .4;
+  scale: .9;
   opacity: 1;
-  background-color: #a88ceb8f;
   border: 2px solid #d2d2d4;
-
 }
 
 .arroyBtn:hover>.arrowImg {
@@ -322,7 +319,6 @@ body {
   transform-origin: 0%;
   z-index: 999;
 }
-
 
 @media only screen and (min-width: 1550px) {
 
@@ -350,8 +346,6 @@ body {
     margin-bottom: 150px;
     margin-right: -100px;
   }
-
-
 }
 
 @media only screen and (min-width: 1000px) {
@@ -359,15 +353,13 @@ body {
     flex-wrap: nowrap;
   }
 
+
+
   .projImgContainer {
     min-width: 500px;
     min-height: 350px;
   }
-
-
 }
-
-
 
 @media only screen and (max-width: 1200px) {
 
@@ -477,7 +469,6 @@ body {
 
   .aboutCardImgae {
     height: 150px;
-
   }
 
   .aboutCardImgae h3 {
@@ -514,6 +505,12 @@ body {
 @media only screen and (max-width: 650px) {
   .container {
     display: none;
+  }
+
+
+  .rightHeader {
+    margin-top: -100px;
+    scale: .8;
   }
 }
 

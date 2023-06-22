@@ -4,24 +4,21 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    height: 100vh;
+    height: 800px;
     width: 100%;
 }
-
 
 .leftHeader {
     display: flex;
     flex-direction: column;
-    margin: auto;
     width: 45%;
-    height: 60vh;
+    height: 600px;
 }
 
 .rightHeader {
     position: relative;
     width: 35%;
-    height: 60vh;
-    margin: auto;
+    height: 600px;
 }
 
 .techIcon {
@@ -108,6 +105,7 @@
 .techIconBig {
     scale: .8;
 }
+
 
 .workBtn {
     width: 200px;

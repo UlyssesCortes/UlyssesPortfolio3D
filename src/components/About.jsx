@@ -1,11 +1,13 @@
 import React from "react";
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
-import { github } from "../assets";
+// import { github } from "../assets";
 import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
+import { arrow } from "../assets";
+
 import './style/About.css'
 
 
@@ -27,6 +29,7 @@ const ServiceCard = ({ index, title, icon }) => (
           src={icon}
           alt='web-development'
           className='w-16 h-16 object-contain'
+          loading="lazy"
         />
 
         <h3 className='text-white text-[20px] font-bold text-center'>
@@ -40,8 +43,7 @@ const ServiceCard = ({ index, title, icon }) => (
 const About = () => {
 
   return (
-    <>
-
+    <main className="about">
       <motion.div variants={textVariant()} className="aboutSec">
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
@@ -59,7 +61,7 @@ const About = () => {
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
-    </>
+    </main>
   );
 };
 

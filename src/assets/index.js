@@ -11,12 +11,11 @@ import githubNavGrey from './githubNavGrey.png'
 import linkedin from './linkedin.png'
 import linkedinGrey from './linkedinGrey.png'
 
-
 import frazierFarms from "./company/FrazierFarm.png";
 import windowPros from "./company/squeegee.png";
 import coding from "./company/coding.png";
 
-import graceShoper from "./digitalDepot3.png";
+import graceShoper from "./digitalDepot.png";
 import fitness from "./FitnessTracker.png";
 import windowProsIcon from "./WindowPros.png";
 import arrow from '../assets/arrow.png'

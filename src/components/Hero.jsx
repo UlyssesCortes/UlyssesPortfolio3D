@@ -27,7 +27,6 @@ const Hero = () => {
             <a href='#projects' className="workBtn">
               <button >My Projects</button>
             </a>
-            {/* <a href="https://drive.google.com/file/d/1FoWrLKNtEqDvZl8eRGJDe43rcE8-UOT2/view?usp=sharing" target="_blank" className="workBtn"> */}
             <a href="https://drive.google.com/file/d/1FoWrLKNtEqDvZl8eRGJDe43rcE8-UOT2/view?usp=sharing" target="_blank" className="workBtn">
               <button >Resume</button>
             </a>
@@ -40,6 +39,7 @@ const Hero = () => {
               src={arrow}
               alt='arrow'
               className='arrowImg'
+              loading="lazy"
             />
           </div>
         </a>
@@ -53,6 +53,7 @@ const Hero = () => {
               src={js}
               alt='js'
               className='arrowImg techIconBig'
+              loading="lazy"
             />
           </div>
           <div className="css techIcon">CSS</div>
@@ -62,6 +63,7 @@ const Hero = () => {
               src={react}
               alt='react'
               className='arrowImg techIconBig'
+              loading="lazy"
             />
           </div>
           <div className="nodejs techIcon">NodeJs</div>
@@ -72,6 +74,7 @@ const Hero = () => {
               src={postgres}
               alt='postgres'
               className='arrowImg techIconBig'
+              loading="lazy"
             />
           </div>
         </div>
