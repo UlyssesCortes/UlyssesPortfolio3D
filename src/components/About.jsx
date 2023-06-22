@@ -1,7 +1,6 @@
 import React from "react";
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
-// import { github } from "../assets";
 import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
@@ -15,7 +14,6 @@ const ServiceCard = ({ index, title, icon }) => (
   <section className='aboutCard'>
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-    // className='shadow-card'
     >
       <div
         options={{

@@ -16,13 +16,51 @@
     padding-bottom: 100px;
 }
 
+.projectDescription {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+}
+
+.projectDescription.expandText {
+    -webkit-line-clamp: unset;
+}
+
 .projImgContainer {
     display: flex;
     justify-content: center;
     border-radius: 10px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    cursor: pointer;
+    box-shadow: rgba(100, 100, 111, 0.1) 0px 7px 10px 0px;
 }
+
+.projLinks {
+    display: flex;
+    gap: 25px;
+    color: black;
+}
+
+.projLinks button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    display: flex;
+    flex-grow: 1;
+    border: solid 1.5px black;
+    padding: 10px;
+    border-radius: 25px;
+    transition: all ease-in-out .2s;
+}
+
+.projLinks button:hover {
+    color: rgb(253, 253, 253);
+    border: solid 1.5px rgb(163, 163, 163);
+    background-color: rgb(94, 93, 93);
+}
+
+
 
 .descriptionContainer {
     display: flex;

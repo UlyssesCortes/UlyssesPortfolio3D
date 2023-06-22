@@ -279,9 +279,10 @@ body {
   height: 200px;
   background-color: transparent;
   border: 2px solid #804dee;
-  /* margin-top: -300px; */
+  margin-bottom: -70px;
+  margin-left: -70px;
   border-radius: 50%;
-  padding: 11%;
+  padding: 150px;
   cursor: pointer;
   transition: all ease-in 0.2s;
   opacity: 0.6;
@@ -300,8 +301,8 @@ body {
 }
 
 .arroyBtn:hover>.arrowImg {
-  min-width: 90px;
-  min-height: 90px;
+  min-width: 70px;
+  min-height: 70px;
 }
 
 ::-webkit-scrollbar {
@@ -318,6 +319,12 @@ body {
   border-radius: 50px;
   transform-origin: 0%;
   z-index: 999;
+}
+
+@media only screen and (max-height: 810px) {
+  .arroyBtn {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 1550px) {
@@ -342,9 +349,7 @@ body {
   }
 
   .rightHeader {
-    scale: 1.5;
-    margin-bottom: 150px;
-    margin-right: -100px;
+    scale: 1.2;
   }
 }
 
@@ -357,7 +362,7 @@ body {
 
   .projImgContainer {
     min-width: 500px;
-    min-height: 350px;
+    min-height: 320px;
   }
 }
 

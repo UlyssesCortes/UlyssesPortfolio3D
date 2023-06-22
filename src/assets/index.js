@@ -2,7 +2,6 @@ import backend from "./api.png";
 import design from "./design.png";
 import mobile from "./react.png";
 import web from "./dev.png";
-import github from "./github.png";
 
 import logo from "./Logo.png";
 
@@ -30,7 +29,6 @@ export {
   mobile,
   web,
   logo,
-  github,
   frazierFarms,
   coding,
   windowPros,

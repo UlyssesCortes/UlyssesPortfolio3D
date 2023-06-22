@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion, useViewportScroll, useTransform } from "framer-motion";
 import { styles } from "../styles";
-import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import './style/Projects.css'
@@ -14,15 +13,14 @@ const ProjectCard = ({
   source_code_link,
   project_url,
 }) => {
+  const [showText, setShowText] = useState(false)
 
   return (
     <>
-      <div className="projectContainer" data-type="link">
+      <section className="projectContainer" data-type="link">
         <section className="projImageContainer">
           <div className=' projImgContainer'
-            onClick={() => window.open(project_url, "_blank")}
           >
-
             <img
               src={image}
               alt='project_image'
@@ -30,19 +28,17 @@ const ProjectCard = ({
               loading="lazy"
             />
           </div>
+          <section className="projLinks">
+            <button onClick={() => window.open(source_code_link, "_blank")}>GitHub</button>
+            <button onClick={() => window.open(project_url, "_blank")}>Live Link</button>
+          </section>
 
-          <img
-            src={github}
-            alt='githubCode'
-            className='gitLinkSource'
-            onClick={() => window.open(source_code_link, "_blank")}
-            loading="lazy"
-          />
         </section>
 
-        <div className='descriptionContainer'>
+        <section className='descriptionContainer'>
           <h3>{name}</h3>
-          <p>{description}</p>
+          <p className={`projectDescription ${showText && "expandText"}`}
+            onClick={() => { setShowText(!showText) }}>{description}</p>
 
           <div className='mt-4 flex flex-wrap gap-2'>
             {tags.map((tag) => (
@@ -54,8 +50,8 @@ const ProjectCard = ({
               </p>
             ))}
           </div>
-        </div>
-      </div>
+        </section>
+      </section>
     </>
   );
 };
@@ -67,7 +63,6 @@ const Works = () => {
 
   return (
     <>
-
       <motion.div
         id="projects"
         style={{
@@ -76,7 +71,7 @@ const Works = () => {
       >
 
         <div className='myProjects'>
-          <p id="projTitle" className={styles.sectionHeadText}>Projects</p>
+          <h1 id="projTitle" className={styles.sectionHeadText}>Projects</h1>
 
           {projects.map((project, index) => (
             <ProjectCard key={`project-${index}`} index={index} {...project} />

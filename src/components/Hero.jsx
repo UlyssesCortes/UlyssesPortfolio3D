@@ -6,23 +6,21 @@ const Hero = () => {
 
   return (
     <>
-      <section className="heroSection">
-        <div
+      <main className="heroSection">
+        <article
           initial="hidden"
           animate="show"
           className="leftHeader"
         >
-          <div>
-            <section className="heroName">
-              <h1 className={`${styles.heroHeadText}`}>
-                Hi, I'm <span className='text-[#915EFF]'>Ulysses</span>
-              </h1>
-              <p className={`${styles.heroSubText} mt-2 text-white-100 sloganHero`}>
-                I design and develop, user <br className='sm:block hidden' />
-                interfaces and web applications
-              </p>
-            </section>
-          </div>
+          <section className="heroName">
+            <h1 className={`${styles.heroHeadText}`}>
+              Hi, I'm <span className='text-[#915EFF]'>Ulysses</span>
+            </h1>
+            <p className={`${styles.heroSubText} mt-2 text-white-100 sloganHero`}>
+              I design and develop, user <br className='sm:block hidden' />
+              interfaces and web applications
+            </p>
+          </section>
           <div className='buttonContainer'>
             <a href='#projects' className="workBtn">
               <button >My Projects</button>
@@ -31,18 +29,8 @@ const Hero = () => {
               <button >Resume</button>
             </a>
           </div>
-        </div>
+        </article>
 
-        <a href='#about'>
-          <div className='arroyBtn'>
-            <img
-              src={arrow}
-              alt='arrow'
-              className='arrowImg'
-              loading="lazy"
-            />
-          </div>
-        </a>
         <div
           initial="hidden"
           animate="show"
@@ -79,8 +67,17 @@ const Hero = () => {
           </div>
         </div>
 
-      </section>
-
+      </main>
+      <a href='#about'>
+        <div className='arroyBtn'>
+          <img
+            src={arrow}
+            alt='arrow'
+            className='arrowImg'
+            loading="lazy"
+          />
+        </div>
+      </a>
     </>
   );
 };
