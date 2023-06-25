@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion, useViewportScroll, useTransform } from "framer-motion";
+import { textVariant } from "../utils/motion";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
@@ -29,8 +30,8 @@ const ProjectCard = ({
             />
           </div>
           <section className="projLinks">
-            <button onClick={() => window.open(source_code_link, "_blank")}>GitHub</button>
             <button onClick={() => window.open(project_url, "_blank")}>Live Link</button>
+            <button onClick={() => window.open(source_code_link, "_blank")}>GitHub</button>
           </section>
 
         </section>
@@ -71,7 +72,7 @@ const Works = () => {
       >
 
         <div className='myProjects'>
-          <h1 id="projTitle" className={styles.sectionHeadText}>Projects</h1>
+          <motion.h1 variants={textVariant()} id="projTitle" className={styles.sectionHeadText}>Projects</motion.h1>
 
           {projects.map((project, index) => (
             <ProjectCard key={`project-${index}`} index={index} {...project} />

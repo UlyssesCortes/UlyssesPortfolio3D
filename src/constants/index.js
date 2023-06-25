@@ -102,19 +102,22 @@ const projects = [
                 name: "Postgress"
             },
             {
+                name: "Stripe"
+            },
+            {
                 name: "Nodejs"
             },
             {
                 name: "HTML/CSS"
             },
             {
-                name: "Stripe"
-            },
-            {
-                name: "Framer Motion"
+                name: "Axios"
             },
             {
                 name: "Lottie"
+            },
+            {
+                name: "Framer Motion"
             },
         ],
         image: graceShoper,
