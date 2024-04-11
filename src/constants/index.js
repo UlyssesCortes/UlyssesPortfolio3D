@@ -3,12 +3,11 @@ import {
     backend,
     design,
     web,
-    windowPros,
-    frazierFarms,
+    windowProsIcon,
     coding,
     graceShoper,
     fitness,
-    windowProsIcon,
+    VazquezBarber
 } from "../assets";
 
 export const navLinks = [
@@ -46,6 +45,18 @@ const services = [
 ];
 const experiences = [
     {
+        title: "Web Developer",
+        company_name: "VazquezBarber",
+        icon: coding,
+        iconBg: "#E6DEDD",
+        date: "Mar 2024 - May 2024",
+        points: [
+            "Simplify appointment scheduling for clients with an intuitive online booking system integrated seamlessly into the website.",
+            "User-friendly interface that offers convenience and accessibility, allowing clients to easily view available time slots, select preferred services, and book appointments hassle-free.",
+            "Worked closely with barbershop owner to ensure the website met his needs and reflected his brand.",
+        ],
+    },
+    {
         title: "Freelance Web Developer",
         company_name: "WindowPros",
         icon: coding,
@@ -60,7 +71,7 @@ const experiences = [
     {
         title: "Associate",
         company_name: "WindowPros",
-        icon: windowPros,
+        icon: windowProsIcon,
         iconBg: "#E6DEDD",
         date: "Feb 2022 - Aug 2022",
         points: [
@@ -68,22 +79,35 @@ const experiences = [
             "Contributed to a team that constantly communicated to achieve company goals.",
             "Recognized the value of teamwork and contributed to building a team that consistently worked together to achieve success.",
         ],
-    },
-    {
-        title: "Produce Specialist",
-        company_name: "Frazer Farms",
-        icon: frazierFarms,
-        iconBg: "#E6DEDD",
-        date: "Jan 2020 - Jan 2021  ",
-        points: [
-            "Ensuring proper product presentation through arranging, creating displays, and stocking products.",
-            "Providing customer service by helping customers find products, answering inquiries, and providing recommendations.",
-            "Maintaining store cleanliness by keeping shelves tidy, labeling products, and addressing spills or messes while answering calls and addressing customer inquiries professionally.",
-        ],
-    },
+    }
 ];
 
 const projects = [
+    {
+        name: "VazquezBarber",
+        description:
+            "Revolutionized a local barbershop's efficiency with a custom website, integrating Calendly for seamless appointment scheduling. Utilized React, CSS, and HTML to craft a responsive platform, ensuring clients can easily book appointments anytime, anywhere. Collaborated closely with the owners to tailor the site to their needs, reinforcing their commitment to customer service.",
+        tags: [
+            {
+                name: "React"
+            },
+            {
+                name: "JavaScript"
+            },
+            {
+                name: "HTML/CSS"
+            },
+            {
+                name: "Calendly"
+            },
+            {
+                name: "Lottie"
+            },
+        ],
+        image: VazquezBarber,
+        source_code_link: "https://github.com/UlyssesCortes/VazquezBarber",
+        project_url: "https://vazquezbarber.com/",
+    },
     {
         name: "DigitalDepot",
         description:
@@ -151,33 +175,7 @@ const projects = [
         image: fitness,
         source_code_link: "https://github.com/UlyssesCortes/UNIV_Fitness-tracker_FrontEnd",
         project_url: "https://silly-torte-725ca7.netlify.app/",
-    },
-    {
-        name: "Window Pros",
-        description:
-            "This React-built website has a clean and responsive UI that allows customers to generate quick online quotes for window cleaning services. It features a service list, pricing calculator, and contact form to help customers select services and request quotes easily. The website is optimized for various devices, ensuring a seamless experience for customers.",
-        tags: [
-            {
-                name: "React"
-            },
-            {
-                name: "JavaScript"
-            },
-            {
-                name: "HTML/CSS"
-            },
-            {
-                name: "Spline"
-            },
-            {
-                name: "Figma"
-            },
-        ],
-        image: windowProsIcon,
-        source_code_link: "https://github.com/UlyssesCortes/WindowProsWebsite",
-        project_url: "https://windowprosoceanside.netlify.app/",
     }
-
 ];
 
 export { services, experiences, projects };

@@ -10,13 +10,12 @@ import githubNavGrey from './githubNavGrey.png'
 import linkedin from './linkedin.png'
 import linkedinGrey from './linkedinGrey.png'
 
-import frazierFarms from "./company/FrazierFarm.png";
-import windowPros from "./company/squeegee.png";
+import VazquezBarber from "./company/VazquezBarber.png";
 import coding from "./company/coding.png";
 
 import graceShoper from "./digitalDepot.png";
 import fitness from "./FitnessTracker.png";
-import windowProsIcon from "./WindowPros.png";
+import windowProsIcon from "./company/squeegee.png";
 import arrow from '../assets/arrow.png'
 
 import js from '../assets/js.png'
@@ -29,9 +28,7 @@ export {
   mobile,
   web,
   logo,
-  frazierFarms,
   coding,
-  windowPros,
   graceShoper,
   fitness,
   arrow,
@@ -43,4 +40,5 @@ export {
   githubNavGrey,
   linkedin,
   linkedinGrey,
+  VazquezBarber
 };
